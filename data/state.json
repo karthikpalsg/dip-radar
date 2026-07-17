@@ -20,8 +20,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "COHR": {
    "status": "watch",
@@ -43,8 +43,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "SNDK": {
    "status": "watch",
@@ -66,8 +66,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "ON": {
    "status": "watch",
@@ -89,8 +89,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "ALB": {
    "status": "watch",
@@ -112,8 +112,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "WDC": {
    "status": "watch",
@@ -135,8 +135,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "STX": {
    "status": "watch",
@@ -158,8 +158,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "LITE": {
    "status": "watch",
@@ -181,8 +181,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "TER": {
    "status": "watch",
@@ -204,8 +204,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "SWKS": {
    "status": "watch",
@@ -227,8 +227,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "INTC": {
    "status": "dip",
@@ -260,8 +260,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "FSLR": {
    "status": "watch",
@@ -283,8 +283,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "ECHO": {
    "status": "dip",
@@ -316,8 +316,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "MPWR": {
    "status": "watch",
@@ -339,8 +339,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "JBL": {
    "status": "watch",
@@ -362,8 +362,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "GNRC": {
    "status": "watch",
@@ -385,8 +385,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "FLEX": {
    "status": "watch",
@@ -408,8 +408,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "MCHP": {
    "status": "watch",
@@ -431,8 +431,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "IBM": {
    "status": "watch",
@@ -454,8 +454,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "LRCX": {
    "status": "watch",
@@ -477,8 +477,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "APP": {
    "status": "watch",
@@ -500,8 +500,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "FCX": {
    "status": "watch",
@@ -523,8 +523,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "CIEN": {
    "status": "watch",
@@ -546,8 +546,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "Q": {
    "status": "watch",
@@ -569,8 +569,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "GLW": {
    "status": "watch",
@@ -592,8 +592,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "KLAC": {
    "status": "watch",
@@ -615,8 +615,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "NEM": {
    "status": "watch",
@@ -638,8 +638,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "NXPI": {
    "status": "watch",
@@ -661,8 +661,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "FIX": {
    "status": "watch",
@@ -684,8 +684,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "STLD": {
    "status": "watch",
@@ -707,8 +707,8 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "PWR": {
    "status": "watch",
@@ -730,8 +730,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "KEYS": {
    "status": "watch",
@@ -753,8 +753,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "SLB": {
    "status": "watch",
@@ -776,8 +776,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "CTSH": {
    "status": "watch",
@@ -799,8 +799,8 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "DOW": {
    "status": "dip",
@@ -832,8 +832,8 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "PNR": {
    "status": "watch",
@@ -855,8 +855,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "AKAM": {
    "status": "watch",
@@ -878,8 +878,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "CCI": {
    "status": "watch",
@@ -901,8 +901,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "APTV": {
    "status": "watch",
@@ -924,8 +924,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "EME": {
    "status": "watch",
@@ -947,8 +947,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "CCL": {
    "status": "triggered",
@@ -970,8 +970,8 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "triggered"
   },
   "HII": {
    "status": "watch",
@@ -993,8 +993,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "BKR": {
    "status": "dip",
@@ -1036,8 +1036,8 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "triggered"
   },
   "NFLX": {
    "status": "watch",
@@ -1059,8 +1059,8 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "LYB": {
    "status": "dip",
@@ -1092,8 +1092,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "CSCO": {
    "status": "watch",
@@ -1115,8 +1115,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "STZ": {
    "status": "watch",
@@ -1138,8 +1138,8 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "HAL": {
    "status": "dip",
@@ -1171,8 +1171,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "TKO": {
    "status": "watch",
@@ -1194,8 +1194,8 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   },
   "LVS": {
    "status": "watch",
@@ -1217,8 +1217,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-17 manual (first full run)",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-17 manual dispatch",
+   "prev_status": "watch"
   }
  },
  "runs": [
@@ -1230,6 +1230,15 @@
    "triggered": 2,
    "alerted": 2,
    "emailed": true
+  },
+  {
+   "date": "2026-07-17",
+   "label": "manual dispatch",
+   "dippers": 57,
+   "watch": 48,
+   "triggered": 2,
+   "alerted": 0,
+   "emailed": false
   }
  ]
 }

@@ -19,9 +19,10 @@ import yfinance as yf
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from radar import gates, state as st
 from radar.analyst import analyst_momentum
-from radar.emailer import send_alerts
+from radar.emailer import send_alerts, send_digest
 from radar.foundation import FOUNDATION_THRESHOLD, foundation_score
-from radar.guard import resolve_run
+from radar.guard import NY, resolve_run
+from radar.scorecard import grade_alerts, summary_line
 from radar.universe import load_universe
 
 import config
@@ -131,13 +132,25 @@ def main():
     alerts.sort(key=lambda a: -a["composite"])
     watchlist.sort(key=lambda a: -a["composite"])
 
-    _print_report(label, alerts, triggered_now, watchlist)
+    try:
+        scorecard = grade_alerts()
+    except Exception as e:
+        print(f"Scorecard skipped: {e}")
+        scorecard = []
+
+    _print_report(label, alerts, triggered_now, watchlist, scorecard)
 
     emailed = False
     if alerts and not args.no_email:
-        emailed = send_alerts(alerts, label, config)
+        emailed = send_alerts(alerts, label, config, scorecard)
         print(f"Email: {'sent to ' + config.ALERT_TO if emailed else 'NOT sent (disabled or failed)'}")
     _log_alerts(alerts, label, today)
+
+    # Weekly digest: Friday close-1h run, or forced with --digest
+    is_friday_close = label == "close-1h" and datetime.now(NY).weekday() == 4
+    if (args.digest or is_friday_close) and not args.no_email:
+        sent = send_digest(triggered_now, watchlist, scorecard, label, config)
+        print(f"Digest: {'sent to ' + config.ALERT_TO if sent else 'NOT sent'}")
 
     app_state.setdefault("runs", []).append({
         "date": today, "label": label, "dippers": int(len(dippers)),
@@ -148,7 +161,7 @@ def main():
     print("State saved.")
 
 
-def _print_report(label, alerts, triggered_now, watchlist):
+def _print_report(label, alerts, triggered_now, watchlist, scorecard=None):
     print(f"\n=== DIP RADAR [{label}] ===")
     print(f"TRIGGERED (all 4 gates): {len(triggered_now)} | new alerts: {len(alerts)}")
     for a in triggered_now:
@@ -165,6 +178,8 @@ def _print_report(label, alerts, triggered_now, watchlist):
             missing.append("rising")
         print(f"    {a['symbol']:6s} {a['composite']:5.1f}/100  "
               f"analyst {a['analyst_score']:+5.1f}  missing: {', '.join(missing)}")
+    if scorecard:
+        print(f"SCORECARD: {summary_line(scorecard)}")
 
 
 def _log_alerts(alerts, label, today):
@@ -190,6 +205,7 @@ def _parse_args():
     p.add_argument("--force", action="store_true", help="bypass the run-window guard")
     p.add_argument("--label", help="run label when forced (default: manual)")
     p.add_argument("--no-email", action="store_true")
+    p.add_argument("--digest", action="store_true", help="send the digest email this run")
     p.add_argument("--max", type=int, help="limit universe size (dev/testing)")
     return p.parse_args()
 

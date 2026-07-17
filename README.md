@@ -50,6 +50,15 @@ what GitHub Actions does via repo secrets).
 - `data/state.json` — per-ticker state, target history (committed by Actions)
 - `data/alerts_log.csv` — every alert ever sent (the scorecard's raw data)
 
+## Scorecard & digest
+
+Every alert is graded against SPY from its entry price (`radar/scorecard.py`,
+CLI: `python3 -m radar.scorecard`). Verdicts: Working (alpha >= +2%), Flat,
+Failed (alpha <= -2%); alerts under 3 days old are "Too fresh". The scorecard
+appears in every alert email, and a weekly digest (triggered + watch list +
+scorecard) goes out on the Friday close-1h run. Force one with `--digest`.
+Thresholds stay human-tuned — the scorecard measures, it doesn't auto-tweak.
+
 ## Composite conviction score
 
 `0.35 × analyst momentum + 0.30 × foundation + 0.15 × dip quality + 0.20 × rising strength`

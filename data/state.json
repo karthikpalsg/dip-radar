@@ -1,0 +1,1235 @@
+{
+ "tickers": {
+  "MRVL": {
+   "status": "watch",
+   "analyst_score": 42.0,
+   "composite": 68.2,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 253.69
+    }
+   ],
+   "notes": [],
+   "foundation": 97.9,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "COHR": {
+   "status": "watch",
+   "analyst_score": 10.0,
+   "composite": 54.9,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 388.95
+    }
+   ],
+   "notes": [],
+   "foundation": 79.2,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "SNDK": {
+   "status": "watch",
+   "analyst_score": 47.0,
+   "composite": 69.3,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 2144.14
+    }
+   ],
+   "notes": [],
+   "foundation": 84.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "ON": {
+   "status": "watch",
+   "analyst_score": 54.0,
+   "composite": 71.7,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 113.52
+    }
+   ],
+   "notes": [],
+   "foundation": 82.4,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "ALB": {
+   "status": "watch",
+   "analyst_score": 45.0,
+   "composite": 64.5,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 204.46
+    }
+   ],
+   "notes": [],
+   "foundation": 62.6,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "WDC": {
+   "status": "watch",
+   "analyst_score": 62.0,
+   "composite": 74.7,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 631.12
+    }
+   ],
+   "notes": [],
+   "foundation": 89.4,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "STX": {
+   "status": "watch",
+   "analyst_score": 83.0,
+   "composite": 74.6,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 1001.0
+    }
+   ],
+   "notes": [],
+   "foundation": 85.4,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "LITE": {
+   "status": "watch",
+   "analyst_score": -20.0,
+   "composite": 52.7,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 1103.49
+    }
+   ],
+   "notes": [],
+   "foundation": 90.2,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "TER": {
+   "status": "watch",
+   "analyst_score": 90.0,
+   "composite": 79.6,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 423.41
+    }
+   ],
+   "notes": [],
+   "foundation": 99.7,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "SWKS": {
+   "status": "watch",
+   "analyst_score": -45.0,
+   "composite": 37.0,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 72.94
+    }
+   ],
+   "notes": [],
+   "foundation": 63.3,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "INTC": {
+   "status": "dip",
+   "analyst_score": null,
+   "composite": null,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [],
+   "notes": [],
+   "foundation": 45.3
+  },
+  "QCOM": {
+   "status": "watch",
+   "analyst_score": 62.0,
+   "composite": 69.2,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 222.73
+    }
+   ],
+   "notes": [],
+   "foundation": 66.7,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "FSLR": {
+   "status": "watch",
+   "analyst_score": 38.0,
+   "composite": 73.5,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 254.25
+    }
+   ],
+   "notes": [],
+   "foundation": 95.4,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "ECHO": {
+   "status": "dip",
+   "analyst_score": null,
+   "composite": null,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [],
+   "notes": [],
+   "foundation": 14.8
+  },
+  "MU": {
+   "status": "watch",
+   "analyst_score": 75.0,
+   "composite": 74.3,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 1489.57
+    }
+   ],
+   "notes": [],
+   "foundation": 85.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "MPWR": {
+   "status": "watch",
+   "analyst_score": 12.0,
+   "composite": 66.9,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 1789.23
+    }
+   ],
+   "notes": [],
+   "foundation": 98.8,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "JBL": {
+   "status": "watch",
+   "analyst_score": 75.0,
+   "composite": 71.6,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 441.44
+    }
+   ],
+   "notes": [],
+   "foundation": 77.3,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "GNRC": {
+   "status": "watch",
+   "analyst_score": 32.0,
+   "composite": 70.4,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 290.27
+    }
+   ],
+   "notes": [],
+   "foundation": 94.5,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "FLEX": {
+   "status": "watch",
+   "analyst_score": 0.0,
+   "composite": 56.5,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 160.4
+    }
+   ],
+   "notes": [],
+   "foundation": 87.4,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "MCHP": {
+   "status": "watch",
+   "analyst_score": -8.0,
+   "composite": 57.3,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 113.38
+    }
+   ],
+   "notes": [],
+   "foundation": 99.4,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "IBM": {
+   "status": "watch",
+   "analyst_score": -17.0,
+   "composite": 51.6,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 283.8
+    }
+   ],
+   "notes": [],
+   "foundation": 81.3,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "LRCX": {
+   "status": "watch",
+   "analyst_score": 70.0,
+   "composite": 76.6,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 366.48
+    }
+   ],
+   "notes": [],
+   "foundation": 97.5,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "APP": {
+   "status": "watch",
+   "analyst_score": 26.0,
+   "composite": 67.1,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 654.6
+    }
+   ],
+   "notes": [],
+   "foundation": 95.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "FCX": {
+   "status": "watch",
+   "analyst_score": 75.0,
+   "composite": 76.1,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 70.93
+    }
+   ],
+   "notes": [],
+   "foundation": 91.7,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "CIEN": {
+   "status": "watch",
+   "analyst_score": 0.0,
+   "composite": 58.1,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 565.71
+    }
+   ],
+   "notes": [],
+   "foundation": 95.8,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "Q": {
+   "status": "watch",
+   "analyst_score": 25.0,
+   "composite": 67.0,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 173.62
+    }
+   ],
+   "notes": [],
+   "foundation": 96.5,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "GLW": {
+   "status": "watch",
+   "analyst_score": 77.0,
+   "composite": 74.9,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 213.07
+    }
+   ],
+   "notes": [],
+   "foundation": 94.1,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "KLAC": {
+   "status": "watch",
+   "analyst_score": 62.0,
+   "composite": 75.8,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 232.43
+    }
+   ],
+   "notes": [],
+   "foundation": 95.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "NEM": {
+   "status": "watch",
+   "analyst_score": -67.0,
+   "composite": 41.2,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 133.47
+    }
+   ],
+   "notes": [],
+   "foundation": 100.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "NXPI": {
+   "status": "watch",
+   "analyst_score": 62.0,
+   "composite": 74.3,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 310.66
+    }
+   ],
+   "notes": [],
+   "foundation": 93.9,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "FIX": {
+   "status": "watch",
+   "analyst_score": 28.0,
+   "composite": 59.0,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 2064.0
+    }
+   ],
+   "notes": [],
+   "foundation": 68.8,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "STLD": {
+   "status": "watch",
+   "analyst_score": -15.0,
+   "composite": 60.4,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 271.33
+    }
+   ],
+   "notes": [],
+   "foundation": 73.5,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": true
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "PWR": {
+   "status": "watch",
+   "analyst_score": -10.0,
+   "composite": 51.4,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 760.81
+    }
+   ],
+   "notes": [],
+   "foundation": 88.8,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "KEYS": {
+   "status": "watch",
+   "analyst_score": 45.0,
+   "composite": 74.7,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 386.92
+    }
+   ],
+   "notes": [],
+   "foundation": 100.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "SLB": {
+   "status": "watch",
+   "analyst_score": -75.0,
+   "composite": 35.4,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 60.97
+    }
+   ],
+   "notes": [],
+   "foundation": 71.2,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "CTSH": {
+   "status": "watch",
+   "analyst_score": -50.0,
+   "composite": 55.4,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 63.9
+    }
+   ],
+   "notes": [],
+   "foundation": 82.9,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": true
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "DOW": {
+   "status": "dip",
+   "analyst_score": null,
+   "composite": null,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [],
+   "notes": [],
+   "foundation": 14.6
+  },
+  "ACN": {
+   "status": "watch",
+   "analyst_score": -77.0,
+   "composite": 52.7,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 179.13
+    }
+   ],
+   "notes": [],
+   "foundation": 75.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": true
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "PNR": {
+   "status": "watch",
+   "analyst_score": -90.0,
+   "composite": 35.0,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 86.13
+    }
+   ],
+   "notes": [],
+   "foundation": 76.8,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "AKAM": {
+   "status": "watch",
+   "analyst_score": 0.0,
+   "composite": 57.3,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 159.3
+    }
+   ],
+   "notes": [],
+   "foundation": 84.1,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "CCI": {
+   "status": "watch",
+   "analyst_score": 0.0,
+   "composite": 50.6,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 98.76
+    }
+   ],
+   "notes": [],
+   "foundation": 63.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "APTV": {
+   "status": "watch",
+   "analyst_score": -25.0,
+   "composite": 49.5,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 77.67
+    }
+   ],
+   "notes": [],
+   "foundation": 73.2,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "EME": {
+   "status": "watch",
+   "analyst_score": 0.0,
+   "composite": 52.4,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 1000.14
+    }
+   ],
+   "notes": [],
+   "foundation": 82.8,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "CCL": {
+   "status": "triggered",
+   "analyst_score": 34.0,
+   "composite": 73.0,
+   "last_alert": "2026-07-17 08:32",
+   "last_alert_composite": 73.0,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 35.47
+    }
+   ],
+   "notes": [],
+   "foundation": 70.2,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": true
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "HII": {
+   "status": "watch",
+   "analyst_score": -15.0,
+   "composite": 46.1,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 368.55
+    }
+   ],
+   "notes": [],
+   "foundation": 81.1,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "BKR": {
+   "status": "dip",
+   "analyst_score": null,
+   "composite": null,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [],
+   "notes": [],
+   "foundation": 57.2
+  },
+  "APO": {
+   "status": "dip",
+   "analyst_score": null,
+   "composite": null,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [],
+   "notes": [],
+   "foundation": 48.8
+  },
+  "AMT": {
+   "status": "triggered",
+   "analyst_score": 60.0,
+   "composite": 78.6,
+   "last_alert": "2026-07-17 08:32",
+   "last_alert_composite": 78.6,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 215.17
+    }
+   ],
+   "notes": [],
+   "foundation": 75.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": true
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "NFLX": {
+   "status": "watch",
+   "analyst_score": -50.0,
+   "composite": 49.1,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 111.03
+    }
+   ],
+   "notes": [],
+   "foundation": 90.3,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": true
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "LYB": {
+   "status": "dip",
+   "analyst_score": null,
+   "composite": null,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [],
+   "notes": [],
+   "foundation": 30.3
+  },
+  "KR": {
+   "status": "watch",
+   "analyst_score": -62.0,
+   "composite": 32.1,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 70.64
+    }
+   ],
+   "notes": [],
+   "foundation": 61.5,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "CSCO": {
+   "status": "watch",
+   "analyst_score": 10.0,
+   "composite": 60.1,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 129.09
+    }
+   ],
+   "notes": [],
+   "foundation": 100.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "STZ": {
+   "status": "watch",
+   "analyst_score": -58.0,
+   "composite": 39.1,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 171.0
+    }
+   ],
+   "notes": [],
+   "foundation": 61.2,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": true
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "HAL": {
+   "status": "dip",
+   "analyst_score": null,
+   "composite": null,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [],
+   "notes": [],
+   "foundation": 56.8
+  },
+  "SNPS": {
+   "status": "watch",
+   "analyst_score": 46.0,
+   "composite": 72.7,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 563.99
+    }
+   ],
+   "notes": [],
+   "foundation": 100.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "TKO": {
+   "status": "watch",
+   "analyst_score": 18.0,
+   "composite": 71.5,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 233.0
+    }
+   ],
+   "notes": [],
+   "foundation": 99.8,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": true,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  },
+  "LVS": {
+   "status": "watch",
+   "analyst_score": -35.0,
+   "composite": 49.9,
+   "last_alert": null,
+   "last_alert_composite": null,
+   "target_history": [
+    {
+     "d": "2026-07-17",
+     "mean": 66.33
+    }
+   ],
+   "notes": [],
+   "foundation": 90.0,
+   "gates": {
+    "dip": true,
+    "foundation": true,
+    "analyst_turn": false,
+    "rising": false
+   },
+   "last_seen": "2026-07-17 manual (first full run)",
+   "prev_status": "dormant"
+  }
+ },
+ "runs": [
+  {
+   "date": "2026-07-17",
+   "label": "manual (first full run)",
+   "dippers": 57,
+   "watch": 48,
+   "triggered": 2,
+   "alerted": 2,
+   "emailed": true
+  }
+ ]
+}

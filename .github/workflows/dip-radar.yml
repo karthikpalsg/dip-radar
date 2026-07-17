@@ -1,0 +1,66 @@
+name: Dip Radar
+
+# ============================================================
+# 3 runs per NASDAQ trading day, anchored to New York time:
+#   open+1h   10:30 ET  — catches pre-market analyst actions + first-hour vote
+#   midday    12:45 ET  — confirmation: did the morning move hold?
+#   close-1h  15:00 ET  — setup: stocks closing strong before the bell
+#
+# 6 UTC crons cover both EDT (UTC-4) and EST (UTC-5). run.py self-guards:
+# it checks the actual America/New_York clock and the NASDAQ calendar
+# (holidays + half-days) and exits cleanly if this trigger isn't a real
+# run window. Manual dispatches bypass the guard with --force.
+# ============================================================
+
+on:
+  schedule:
+    - cron: '30 14 * * 1-5'   # 10:30 ET during EDT
+    - cron: '30 15 * * 1-5'   # 10:30 ET during EST
+    - cron: '45 16 * * 1-5'   # 12:45 ET during EDT
+    - cron: '45 17 * * 1-5'   # 12:45 ET during EST
+    - cron: '0  19 * * 1-5'   # 15:00 ET during EDT
+    - cron: '0  20 * * 1-5'   # 15:00 ET during EST
+  workflow_dispatch:
+
+permissions:
+  contents: write   # commits state.json + alerts_log.csv back to the repo
+
+concurrency:
+  group: dip-radar
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Dip Radar
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ALERT_TO: ${{ secrets.ALERT_TO }}
+        run: |
+          cp config.example.py config.py
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python3 run.py --force --label "manual dispatch"
+          else
+            python3 run.py
+          fi
+
+      - name: Commit state back
+        run: |
+          git config user.name  "dip-radar-bot"
+          git config user.email "actions@github.com"
+          git add data/state.json data/alerts_log.csv data/sp500.json || true
+          git diff --staged --quiet || git commit -m "state: $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET') [skip ci]"
+          git push

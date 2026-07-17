@@ -1,0 +1,3 @@
+date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,fresh_turn
+2026-07-17,manual (first full run),AMT,168.92,78.6,60.0,75.0,-9.1,4.2,215,False
+2026-07-17,manual (first full run),CCL,26.86,73.0,34.0,70.2,-10.8,4.8,35,False

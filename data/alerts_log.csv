@@ -3,3 +3,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-07-17,manual (first full run),CCL,26.86,73.0,34.0,70.2,-10.8,4.8,35,False
 2026-07-20,midday,TER,339.90,90.5,90.0,99.7,-16.8,5.5,426,False
 2026-07-20,midday,COHR,294.00,73.3,10.0,79.2,-22.4,6.2,391,False
+2026-07-20,close-1h,LITE,772.20,82.4,22.0,90.2,-11.2,10.5,1105,True

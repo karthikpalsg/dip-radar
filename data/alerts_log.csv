@@ -20,3 +20,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-07-21,midday,JBL,319.07,74.9,25.0,77.3,-14.2,6.0,441,False
 2026-07-21,midday,Q,139.51,73.9,12.0,96.5,-17.4,3.7,175,False
 2026-07-21,midday,CAT,896.92,66.8,12.0,82.2,-8.8,3.8,970,False
+2026-07-21,close-1h,AMAT,566.09,89.9,70.0,97.2,-8.3,7.7,623,False

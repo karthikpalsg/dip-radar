@@ -32,13 +32,13 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "COHR": {
    "status": "triggered",
    "analyst_score": 10.0,
-   "composite": 79.2,
+   "composite": 79.3,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 77.3,
    "target_history": [
@@ -67,13 +67,13 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "SNDK": {
    "status": "triggered",
    "analyst_score": 47.0,
-   "composite": 91.6,
+   "composite": 91.5,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 92.4,
    "target_history": [
@@ -102,13 +102,13 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "ON": {
    "status": "triggered",
    "analyst_score": 34.0,
-   "composite": 82.6,
+   "composite": 81.7,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 77.8,
    "target_history": [
@@ -137,7 +137,7 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "ALB": {
@@ -170,7 +170,7 @@
   "WDC": {
    "status": "triggered",
    "analyst_score": 62.0,
-   "composite": 96.3,
+   "composite": 96.4,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 96.1,
    "target_history": [
@@ -199,13 +199,13 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "STX": {
    "status": "triggered",
    "analyst_score": 83.0,
-   "composite": 92.5,
+   "composite": 92.9,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 92.5,
    "target_history": [
@@ -234,7 +234,7 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "LITE": {
@@ -296,7 +296,7 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "SWKS": {
@@ -331,7 +331,7 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "INTC": {
@@ -347,7 +347,7 @@
   "QCOM": {
    "status": "triggered",
    "analyst_score": 62.0,
-   "composite": 79.2,
+   "composite": 79.1,
    "last_alert": "2026-07-22 16:53",
    "last_alert_composite": 79.2,
    "target_history": [
@@ -376,13 +376,13 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
-   "prev_status": "watch"
+   "last_seen": "2026-07-22 close-1h",
+   "prev_status": "triggered"
   },
   "FSLR": {
    "status": "watch",
    "analyst_score": 38.0,
-   "composite": 81.7,
+   "composite": 81.4,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -411,7 +411,7 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "ECHO": {
@@ -427,7 +427,7 @@
   "MU": {
    "status": "triggered",
    "analyst_score": 75.0,
-   "composite": 93.6,
+   "composite": 93.8,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 91.5,
    "target_history": [
@@ -456,7 +456,7 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "MPWR": {
@@ -487,13 +487,13 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "JBL": {
    "status": "triggered",
    "analyst_score": 25.0,
-   "composite": 76.0,
+   "composite": 75.9,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 74.9,
    "target_history": [
@@ -522,13 +522,13 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "GNRC": {
    "status": "watch",
    "analyst_score": 63.0,
-   "composite": 84.0,
+   "composite": 84.2,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -557,13 +557,13 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "FLEX": {
    "status": "triggered",
    "analyst_score": 15.0,
-   "composite": 77.0,
+   "composite": 77.4,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 75.4,
    "target_history": [
@@ -592,13 +592,13 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "MCHP": {
    "status": "watch",
    "analyst_score": -18.0,
-   "composite": 67.1,
+   "composite": 66.8,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -627,13 +627,13 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "IBM": {
    "status": "watch",
    "analyst_score": -75.0,
-   "composite": 36.7,
+   "composite": 37.1,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -662,13 +662,13 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "LRCX": {
    "status": "triggered",
    "analyst_score": 70.0,
-   "composite": 89.7,
+   "composite": 90.4,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 89.8,
    "target_history": [
@@ -697,13 +697,13 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "APP": {
    "status": "watch",
    "analyst_score": 26.0,
-   "composite": 65.6,
+   "composite": 65.4,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -732,7 +732,7 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "FCX": {
@@ -790,13 +790,13 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "Q": {
    "status": "watch",
    "analyst_score": 22.0,
-   "composite": 77.5,
+   "composite": 77.4,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 73.9,
    "target_history": [
@@ -825,13 +825,13 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "GLW": {
    "status": "watch",
    "analyst_score": 77.0,
-   "composite": 79.9,
+   "composite": 79.8,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 91.1,
    "target_history": [
@@ -860,13 +860,13 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
-   "prev_status": "triggered"
+   "last_seen": "2026-07-22 close-1h",
+   "prev_status": "watch"
   },
   "KLAC": {
    "status": "triggered",
    "analyst_score": 62.0,
-   "composite": 87.9,
+   "composite": 88.4,
    "last_alert": "2026-07-21 16:50",
    "last_alert_composite": 88.1,
    "target_history": [
@@ -895,7 +895,7 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "NEM": {
@@ -932,7 +932,7 @@
   "NXPI": {
    "status": "triggered",
    "analyst_score": 24.0,
-   "composite": 76.7,
+   "composite": 77.2,
    "last_alert": "2026-07-22 16:53",
    "last_alert_composite": 76.7,
    "target_history": [
@@ -961,8 +961,8 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
-   "prev_status": "watch"
+   "last_seen": "2026-07-22 close-1h",
+   "prev_status": "triggered"
   },
   "FIX": {
    "status": "watch",
@@ -1050,7 +1050,7 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "KEYS": {
@@ -1166,7 +1166,7 @@
   "PNR": {
    "status": "watch",
    "analyst_score": -90.0,
-   "composite": 36.1,
+   "composite": 36.4,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -1195,7 +1195,7 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "AKAM": {
@@ -1251,7 +1251,7 @@
   "APTV": {
    "status": "watch",
    "analyst_score": -25.0,
-   "composite": 48.4,
+   "composite": 48.2,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -1266,6 +1266,10 @@
     {
      "d": "2026-07-21",
      "mean": 77.67
+    },
+    {
+     "d": "2026-07-22",
+     "mean": 77.67
     }
    ],
    "notes": [],
@@ -1276,13 +1280,13 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-21 close-1h",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "EME": {
    "status": "watch",
    "analyst_score": 0.0,
-   "composite": 61.9,
+   "composite": 62.0,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -1311,7 +1315,7 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "CCL": {
@@ -1346,7 +1350,7 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "HII": {
@@ -1546,7 +1550,7 @@
   "SNPS": {
    "status": "watch",
    "analyst_score": 46.0,
-   "composite": 76.4,
+   "composite": 76.6,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -1575,7 +1579,7 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "TKO": {
@@ -1631,7 +1635,7 @@
   "ISRG": {
    "status": "watch",
    "analyst_score": -17.0,
-   "composite": 49.2,
+   "composite": 49.0,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -1660,13 +1664,13 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "CDNS": {
    "status": "watch",
    "analyst_score": 26.0,
-   "composite": 69.5,
+   "composite": 69.1,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -1695,13 +1699,13 @@
     "analyst_turn": true,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "CPRT": {
    "status": "watch",
-   "analyst_score": 16.0,
-   "composite": 54.0,
+   "analyst_score": -4.0,
+   "composite": 46.2,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -1712,6 +1716,10 @@
     {
      "d": "2026-07-21",
      "mean": 40.9
+    },
+    {
+     "d": "2026-07-22",
+     "mean": 40.3
     }
    ],
    "notes": [],
@@ -1719,10 +1727,10 @@
    "gates": {
     "dip": true,
     "foundation": true,
-    "analyst_turn": true,
+    "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-21 close-1h",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "ADI": {
@@ -1784,7 +1792,7 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "LHX": {
@@ -1844,7 +1852,7 @@
   "AMAT": {
    "status": "triggered",
    "analyst_score": 70.0,
-   "composite": 89.4,
+   "composite": 90.0,
    "last_alert": "2026-07-21 18:56",
    "last_alert_composite": 89.9,
    "target_history": [
@@ -1869,13 +1877,13 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "triggered"
   },
   "CAT": {
    "status": "triggered",
    "analyst_score": 12.0,
-   "composite": 68.1,
+   "composite": 67.6,
    "last_alert": "2026-07-22 16:53",
    "last_alert_composite": 68.1,
    "target_history": [
@@ -1900,8 +1908,8 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
-   "prev_status": "watch"
+   "last_seen": "2026-07-22 close-1h",
+   "prev_status": "triggered"
   },
   "EMR": {
    "status": "watch",
@@ -1979,7 +1987,7 @@
   "WYNN": {
    "status": "watch",
    "analyst_score": -75.0,
-   "composite": 37.3,
+   "composite": 37.1,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -2000,13 +2008,13 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "MLM": {
    "status": "watch",
    "analyst_score": -8.0,
-   "composite": 52.8,
+   "composite": 52.7,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -2027,13 +2035,13 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "VRT": {
    "status": "watch",
    "analyst_score": -4.0,
-   "composite": 67.3,
+   "composite": 68.4,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -2054,7 +2062,7 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
+   "last_seen": "2026-07-22 close-1h",
    "prev_status": "watch"
   },
   "DHI": {
@@ -2126,7 +2134,7 @@
   "SMCI": {
    "status": "watch",
    "analyst_score": -12.0,
-   "composite": 63.5,
+   "composite": 63.9,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -2143,13 +2151,13 @@
     "analyst_turn": false,
     "rising": true
    },
-   "last_seen": "2026-07-22 midday",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-22 close-1h",
+   "prev_status": "watch"
   },
   "TEL": {
    "status": "watch",
    "analyst_score": -28.0,
-   "composite": 43.6,
+   "composite": 43.5,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -2166,13 +2174,13 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-22 close-1h",
+   "prev_status": "watch"
   },
   "VMC": {
    "status": "watch",
    "analyst_score": -50.0,
-   "composite": 33.4,
+   "composite": 33.2,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -2189,8 +2197,8 @@
     "analyst_turn": false,
     "rising": false
    },
-   "last_seen": "2026-07-22 midday",
-   "prev_status": "dormant"
+   "last_seen": "2026-07-22 close-1h",
+   "prev_status": "watch"
   }
  },
  "runs": [
@@ -2274,6 +2282,15 @@
    "triggered": 16,
    "alerted": 3,
    "emailed": true
+  },
+  {
+   "date": "2026-07-22",
+   "label": "close-1h",
+   "dippers": 46,
+   "watch": 26,
+   "triggered": 16,
+   "alerted": 0,
+   "emailed": false
   }
  ]
 }

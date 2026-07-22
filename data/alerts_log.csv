@@ -21,3 +21,6 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-07-21,midday,Q,139.51,73.9,12.0,96.5,-17.4,3.7,175,False
 2026-07-21,midday,CAT,896.92,66.8,12.0,82.2,-8.8,3.8,970,False
 2026-07-21,close-1h,AMAT,566.09,89.9,70.0,97.2,-8.3,7.7,623,False
+2026-07-22,midday,QCOM,176.41,79.2,62.0,66.7,-20.5,3.6,223,False
+2026-07-22,midday,NXPI,277.42,76.7,24.0,93.9,-13.9,4.1,313,False
+2026-07-22,midday,CAT,898.60,68.1,12.0,82.2,-11.9,4.0,970,False

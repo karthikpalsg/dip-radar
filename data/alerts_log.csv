@@ -28,3 +28,5 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-07-24,midday,CCL,26.53,75.9,44.0,70.2,-8.2,5.0,36,False
 2026-07-27,midday,SNPS,392.29,79.5,23.0,100.0,-13.8,5.0,564,False
 2026-07-27,midday,MLM,572.55,67.7,2.0,92.4,-9.0,4.7,681,False
+2026-07-28,midday,CDNS,346.91,88.8,85.0,100.0,-8.0,6.3,404,False
+2026-07-28,midday,APP,419.79,81.4,26.0,95.0,-12.0,7.1,655,False

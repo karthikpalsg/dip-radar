@@ -47,3 +47,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-07-30,midday,KEYS,313.06,81.5,30.0,100.0,-10.6,5.5,388,False
 2026-07-30,midday,MRVL,181.11,81.1,22.0,97.9,-39.2,10.8,257,False
 2026-07-30,midday,JBL,306.93,78.4,25.0,77.3,-20.4,6.9,441,False
+2026-07-30,close-1h,LITE,684.58,86.6,25.0,90.2,-20.2,13.7,1105,False

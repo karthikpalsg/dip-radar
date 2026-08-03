@@ -53,3 +53,7 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-07-31,midday,COHR,261.59,81.5,22.0,79.2,-29.0,17.8,391,False
 2026-07-31,midday,SNPS,384.96,77.7,23.0,100.0,-15.3,3.4,564,False
 2026-07-31,close-1h,GNRC,198.11,87.8,63.0,94.9,-26.7,3.2,288,False
+2026-08-03,midday,APP,408.48,78.1,18.0,95.0,-22.5,4.2,655,False
+2026-08-03,midday,CARR,62.58,77.2,43.0,75.9,-10.4,4.4,78,False
+2026-08-03,midday,HOOD,91.26,70.2,5.0,82.0,-19.0,5.4,120,False
+2026-08-03,midday,CAT,820.56,67.5,4.0,82.2,-14.7,4.8,959,False

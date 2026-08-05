@@ -59,3 +59,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-08-03,midday,CAT,820.56,67.5,4.0,82.2,-14.7,4.8,959,False
 2026-08-04,midday,KLAC,194.69,94.6,55.0,92.0,-16.6,14.4,231,False
 2026-08-04,midday,ON,81.44,64.4,2.0,82.4,-14.0,3.3,114,True
+2026-08-05,midday,CHRW,153.63,84.9,55.0,82.1,-19.5,4.6,200,False

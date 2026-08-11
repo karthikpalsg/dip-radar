@@ -19,7 +19,7 @@ import yfinance as yf
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from radar import gates, state as st
 from radar.analyst import analyst_momentum
-from radar.emailer import send_alerts, send_digest
+from radar.emailer import send_alerts, send_digest, send_staleness_warning
 from radar.foundation import FOUNDATION_THRESHOLD, foundation_score
 from radar.guard import NY, resolve_run
 from radar.scorecard import grade_alerts, summary_line
@@ -33,6 +33,12 @@ ALERTS_LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "a
 # Composite conviction: analyst turn is the star, foundation anchors it.
 W_ANALYST, W_FOUNDATION, W_DIP, W_RISING = 0.35, 0.30, 0.15, 0.20
 
+# Warn once if no real scan has landed in this long -- generous enough to
+# never false-positive on a normal holiday+weekend gap (worst case is a
+# market holiday against a long weekend, ~70h), tight enough to catch a
+# real outage (e.g. scheduler drift, a broken secret) within a couple days.
+STALE_HOURS = 96
+
 
 def main():
     args = _parse_args()
@@ -43,6 +49,7 @@ def main():
         label, reason = resolve_run()
         if label is None:
             print(f"SKIP: {reason}")
+            _check_staleness()
             return
         print(f"Run window: {label} ({reason})")
 
@@ -153,12 +160,40 @@ def main():
         print(f"Digest: {'sent to ' + config.ALERT_TO if sent else 'NOT sent'}")
 
     app_state.setdefault("runs", []).append({
-        "date": today, "label": label, "dippers": int(len(dippers)),
+        "date": today, "label": label, "at": now.isoformat(), "dippers": int(len(dippers)),
         "watch": len(watchlist), "triggered": len(triggered_now),
         "alerted": len(alerts), "emailed": emailed,
     })
     st.save_state(app_state)
     print("State saved.")
+
+
+def _check_staleness():
+    """Runs on every guarded skip. Warns once (not on every skip) if it's
+    been STALE_HOURS since the last real scan -- catches the radar going
+    dark (scheduler drift, a broken secret) instead of that only surfacing
+    when alerts stop arriving. No-op until the first post-upgrade run has
+    tagged itself with 'at', so this can't false-positive on deploy day."""
+    app_state = st.load_state()
+    runs = app_state.get("runs", [])
+    last_run = runs[-1] if runs else None
+    last_at = last_run.get("at") if last_run else None
+    if not last_at:
+        return
+
+    hours_since = (datetime.now() - datetime.fromisoformat(last_at)).total_seconds() / 3600
+    if hours_since < STALE_HOURS:
+        return
+
+    already_warned = app_state.get("stale_alert_sent_at")
+    if already_warned and already_warned > last_at:
+        return  # already warned about this same stale stretch
+
+    sent = send_staleness_warning(hours_since, last_run, config)
+    print(f"Staleness warning ({hours_since:.0f}h since last scan): "
+          f"{'sent' if sent else 'not sent (disabled or failed)'}")
+    app_state["stale_alert_sent_at"] = datetime.now().isoformat()
+    st.save_state(app_state)
 
 
 def _print_report(label, alerts, triggered_now, watchlist, scorecard=None):

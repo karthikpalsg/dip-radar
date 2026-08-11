@@ -13,12 +13,16 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 NY = ZoneInfo("America/New_York")
-WINDOWS = {  # label -> (hour, minute), matched with a +/-20 min tolerance
+WINDOWS = {  # label -> (hour, minute), matched with a +/-65 min tolerance
     "open+1h": (10, 30),
     "midday": (12, 45),
     "close-1h": (15, 0),
 }
-TOLERANCE_MIN = 20
+# Windows are 135 min apart; GitHub's scheduled-trigger delivery has been
+# running 40-60 min late (observed Aug 2026), so 20 min silently swallowed
+# every trigger. 65 covers that with margin to spare below the 67.5 min
+# point where two windows would start overlapping.
+TOLERANCE_MIN = 65
 
 
 def resolve_run(now=None):

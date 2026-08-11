@@ -8,6 +8,32 @@ from email.mime.text import MIMEText
 RUN_EMOJI = {"open+1h": "🌅", "midday": "🕛", "close-1h": "🌆", "manual": "🔧"}
 
 
+def send_staleness_warning(hours_since, last_run, cfg):
+    """One-off warning when no real scan has landed in a long time -- catches
+    the radar going silently dark (e.g. a scheduler/guard mismatch) instead
+    of it only being noticed when alerts stop arriving. Returns True if sent."""
+    if not cfg.SEND_EMAIL:
+        return False
+
+    last_desc = (f"{last_run['date']} {last_run['label']}" if last_run else "never")
+    subject = f"⚠️ Dip Radar: no scan in {hours_since:.0f}h (last: {last_desc})"
+    html = f"""
+    <html><body style="font-family:Arial,sans-serif;max-width:680px;margin:auto;color:#222;">
+      <div style="background:#8a1f1f;padding:18px 22px;border-radius:8px 8px 0 0;">
+        <h2 style="color:#fff;margin:0;">⚠️ Dip Radar has gone quiet</h2>
+      </div>
+      <div style="border:1px solid #ddd;border-top:none;padding:16px 22px;font-size:13px;">
+        <p>No completed scan in <b>{hours_since:.0f} hours</b> -- last one was
+           <b>{last_desc}</b>. Scheduled triggers are still firing but each one
+           is landing outside the run-window guard, or the workflow itself is
+           failing before it reaches the scan.</p>
+        <p>Check the Actions tab: <code>github.com/karthikpalsg/dip-radar/actions</code></p>
+      </div>
+      {_FOOTER}
+    </body></html>"""
+    return _send(subject, html, cfg)
+
+
 def send_alerts(alerts, run_label, cfg, scorecard=None):
     """alerts: list of dicts (see run.py). Returns True if sent."""
     if not alerts or not cfg.SEND_EMAIL:

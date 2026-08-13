@@ -47,6 +47,8 @@ what GitHub Actions does via repo secrets).
 - `radar/state.py` — `data/state.json` persistence, cooldown logic
 - `radar/guard.py` — NY-clock run windows + NASDAQ calendar
 - `radar/emailer.py` — HTML alert email
+- `radar/scorecard.py` — grades every alert vs SPY
+- `radar/gate_analysis.py` — joins scorecard verdicts against gate inputs to flag what's predictive
 - `data/state.json` — per-ticker state, target history (committed by Actions)
 - `data/alerts_log.csv` — every alert ever sent (the scorecard's raw data)
 
@@ -58,6 +60,19 @@ Failed (alpha <= -2%); alerts under 3 days old are "Too fresh". The scorecard
 appears in every alert email, and a weekly digest (triggered + watch list +
 scorecard) goes out on the Friday close-1h run. Force one with `--digest`.
 Thresholds stay human-tuned — the scorecard measures, it doesn't auto-tweak.
+
+## Gate analysis
+
+`radar/gate_analysis.py` (CLI: `python3 -m radar.gate_analysis`) closes the
+other half of the loop: it joins the scorecard's verdicts back against the
+gate inputs each alert had at fire time (composite, analyst score,
+foundation, chg_1m, off_low) to see which of them actually separate winners
+from losers. It auto-flags a single date/cluster if it's >20% of the sample
+and re-runs the comparison with it excluded, so one bad sector-rotation call
+can't masquerade as a broken gate. Same philosophy as the scorecard: it
+measures and flags hypotheses, it does not rewrite `gates.py` or `run.py` —
+sample sizes are still too small for that. Rerun periodically as
+`data/alerts_log.csv` grows.
 
 ## Composite conviction score
 

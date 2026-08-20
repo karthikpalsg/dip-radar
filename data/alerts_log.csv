@@ -73,3 +73,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-08-14,midday,SPGI,417.51,68.2,10.0,93.0,-8.7,3.0,517,False
 2026-08-19,open+1h,HOOD,96.92,76.7,15.0,82.0,-8.9,12.0,120,False
 2026-08-19,close-1h,VRSK,185.35,81.9,60.0,81.0,-8.0,5.5,238,False
+2026-08-20,midday,HOOD,94.96,72.8,5.0,82.0,-9.1,9.7,120,False

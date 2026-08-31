@@ -23,9 +23,12 @@ ALERTS_LOG = os.path.join(os.path.dirname(__file__), "..", "data", "alerts_log.c
 FRESH_DAYS = 3  # calendar days before a verdict means anything
 
 
-def grade_alerts():
-    """Returns a list of dicts, newest alert first. Empty list if no log."""
-    rows = _read_log()
+def grade_alerts(log_path=None):
+    """Returns a list of dicts, newest alert first. Empty list if no log.
+    log_path defaults to the dip scanner's own alerts_log.csv — pass a
+    different path (e.g. momentum_alerts_log.csv) to grade a second
+    scanner's alerts independently."""
+    rows = _read_log(log_path)
     if not rows:
         return []
 
@@ -89,10 +92,11 @@ def summary_line(graded):
             f"avg alpha {avg_alpha:+.1f}%")
 
 
-def _read_log():
-    if not os.path.exists(ALERTS_LOG):
+def _read_log(log_path=None):
+    log_path = log_path or ALERTS_LOG
+    if not os.path.exists(log_path):
         return []
-    with open(ALERTS_LOG, newline="") as f:
+    with open(log_path, newline="") as f:
         return list(csv.DictReader(f))
 
 

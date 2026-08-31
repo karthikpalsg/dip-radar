@@ -49,6 +49,10 @@ what GitHub Actions does via repo secrets).
 - `radar/emailer.py` — HTML alert email
 - `data/state.json` — per-ticker state, target history (committed by Actions)
 - `data/alerts_log.csv` — every alert ever sent (the scorecard's raw data)
+- `run_momentum.py`, `radar/momentum_gates.py`, `radar/momentum_universe.py`,
+  `radar/momentum_emailer.py` — the momentum scanner, see below. Its own
+  `data/momentum_state.json` / `data/momentum_alerts_log.csv` /
+  `data/momentum_universe.json`.
 
 ## Scorecard & digest
 
@@ -65,5 +69,47 @@ Thresholds stay human-tuned — the scorecard measures, it doesn't auto-tweak.
 
 The analyst turn is the star; foundation anchors it. Dip quality rewards
 deeper entries until they approach collapse territory.
+
+## Momentum Radar (sibling scanner — breakouts, not dips)
+
+Dip Radar only ever looks for stocks that are *down*. `run_momentum.py` is
+the mirror image: it looks for stocks that have already **broken out** —
+up 15%+ over the last month and within 10% of their 52-week high — and
+still passing the same Foundation and Analyst-turn bar as the dip scanner.
+Reuses `radar/foundation.py` and `radar/analyst.py` completely unchanged;
+only Gate 1 (`radar/momentum_gates.py`) and the universe are different.
+
+```
+python3 run_momentum.py --force --no-email --max 60   # dev: limit universe, print only
+python3 run_momentum.py --force                        # full run now, label "manual"
+```
+
+**Universe**: the same S&P 500 list, unioned with a small hand-maintained
+supplemental list (`data/momentum_universe.json`) for large, liquid names
+that show real momentum but aren't S&P 500 constituents — Atlassian
+(`TEAM`) is the seed example; add more there as they come up.
+
+**Its own everything else**, kept fully separate from the dip scanner so
+neither history contaminates the other:
+- `data/momentum_state.json` / `data/momentum_alerts_log.csv`
+- `radar/momentum_emailer.py` — same layout as the dip alert email, but
+  colors a big monthly gain green instead of red, and flags (⚠️) any
+  trigger already up more than 40% in a month as extended/chase-risk
+- Scorecard: `python3 -c "from radar.scorecard import grade_alerts, summary_line; print(summary_line(grade_alerts('data/momentum_alerts_log.csv')))"`
+  (both `radar/state.py` and `radar/scorecard.py` now take an optional
+  `path`/`log_path` argument for this — defaults are unchanged, so the
+  dip scanner's own calls are unaffected)
+
+**Composite score**: identical weights and philosophy to the dip
+scanner's, with `breakout_quality()` swapped in for `dip_quality()` — it
+rewards a healthy 15-40% move, then tapers (not hard-cuts) past 40% as
+the move gets more extended and harder to trust as an entry, the same
+way `dip_quality()` tapers off past -25%.
+
+**Not yet wired into GitHub Actions** — run it manually until it's earned
+a schedule slot next to the dip scanner's. When it is, it should get its
+own workflow file (or a mode flag on the existing one) rather than
+sharing `dip-radar.yml`, so a failure in one scanner can't silently take
+the other down with it.
 
 *Automated screening tool, not financial advice.*

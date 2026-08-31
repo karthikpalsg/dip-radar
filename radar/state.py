@@ -13,18 +13,22 @@ REALERT_SCORE_JUMP = 10  # re-alert inside cooldown only if composite jumps this
 TARGET_HISTORY_MAX = 90
 
 
-def load_state():
+def load_state(path=None):
+    """path defaults to the dip-scanner's own state.json — pass a different
+    path (e.g. momentum_state.json) to keep a second scanner's state fully
+    separate from this one."""
     try:
-        with open(STATE_PATH) as f:
+        with open(path or STATE_PATH) as f:
             return json.load(f)
     except Exception:
         return {"tickers": {}, "runs": []}
 
 
-def save_state(state):
-    os.makedirs(os.path.dirname(STATE_PATH), exist_ok=True)
+def save_state(state, path=None):
+    path = path or STATE_PATH
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     state["runs"] = state.get("runs", [])[-30:]
-    with open(STATE_PATH, "w") as f:
+    with open(path, "w") as f:
         json.dump(state, f, indent=1)
 
 

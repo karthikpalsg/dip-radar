@@ -81,3 +81,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-08-26,midday,DVA,181.68,75.5,28.0,71.1,-24.1,4.5,218,False
 2026-08-26,close-1h,VRSK,188.39,83.8,45.0,81.0,-11.2,7.3,238,False
 2026-08-26,close-1h,DDOG,229.90,84.3,67.0,100.0,-8.4,3.1,285,False
+2026-08-31,manual dispatch,WDC,459.45,72.0,7.0,90.2,-13.8,5.8,665,False

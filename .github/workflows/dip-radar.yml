@@ -21,6 +21,11 @@ on:
     - cron: '0  19 * * 1-5'   # 15:00 ET during EDT
     - cron: '0  20 * * 1-5'   # 15:00 ET during EST
   workflow_dispatch:
+    inputs:
+      digest:
+        description: 'Send the full current-state digest email (triggered + watch + scorecard) instead of a normal alert-only run'
+        type: boolean
+        default: false
 
 permissions:
   contents: write   # commits state.json + alerts_log.csv back to the repo
@@ -52,7 +57,11 @@ jobs:
         run: |
           cp config.example.py config.py
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            python3 run.py --force --label "manual dispatch"
+            if [ "${{ inputs.digest }}" = "true" ]; then
+              python3 run.py --force --label "manual dispatch" --digest
+            else
+              python3 run.py --force --label "manual dispatch"
+            fi
           else
             python3 run.py
           fi

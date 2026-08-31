@@ -1,0 +1,59 @@
+name: Momentum Radar
+
+# ============================================================
+# Dip Radar's sibling scanner — breakouts, not dips. Manual-dispatch
+# only for now, deliberately: no `schedule:` trigger here yet. It
+# should earn a schedule slot next to the dip scanner's once its
+# track record justifies it (see README's Momentum Radar section).
+# ============================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      digest:
+        description: 'Send the full current-state digest email (triggered + watch + scorecard) instead of a normal alert-only run'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # commits momentum_state.json + momentum_alerts_log.csv back to the repo
+
+concurrency:
+  group: momentum-radar
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Momentum Radar
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ALERT_TO: ${{ secrets.ALERT_TO }}
+        run: |
+          cp config.example.py config.py
+          if [ "${{ inputs.digest }}" = "true" ]; then
+            python3 run_momentum.py --force --label "manual dispatch" --digest
+          else
+            python3 run_momentum.py --force --label "manual dispatch"
+          fi
+
+      - name: Commit state back
+        run: |
+          git config user.name  "momentum-radar-bot"
+          git config user.email "actions@github.com"
+          git add data/momentum_state.json data/momentum_alerts_log.csv data/sp500.json || true
+          git diff --staged --quiet || git commit -m "momentum state: $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET') [skip ci]"
+          git push

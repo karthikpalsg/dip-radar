@@ -16,3 +16,6 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-08-31,manual,TEAM,185.62,75.9,33.0,68.0,78.0,89.2,190,False
 2026-08-31,manual,IVZ,33.31,75.6,24.0,65.4,19.5,14.0,33,False
 2026-08-31,manual,FCX,78.42,73.3,12.0,62.6,30.7,25.2,72,False
+2026-08-31,manual dispatch,ABNB,189.43,96.3,75.0,100.0,24.6,26.4,177,False
+2026-08-31,manual dispatch,DXCM,90.82,93.4,75.0,93.0,21.8,9.9,94,False
+2026-08-31,manual dispatch,PSX,244.01,88.7,67.0,81.3,16.5,21.1,222,False

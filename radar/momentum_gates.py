@@ -32,6 +32,25 @@ def gate_breakout(row):
     return True
 
 
+def growth_potential(price, target):
+    """Classifies a breakout name by how much room the consensus analyst
+    target still implies vs. how much of that room the move has already
+    eaten — the specific "still has room to run, or already past where
+    analysts see fair value" read this scanner exists to surface. Returns
+    (label, upside_pct) — upside_pct is None if no usable target."""
+    if not target or target <= 0 or not price:
+        return "No analyst target available", None
+
+    upside = (target - price) / price * 100
+    if upside >= 20:
+        return "Strong room to run", upside
+    if upside >= 5:
+        return "Some room left", upside
+    if upside >= -5:
+        return "Near consensus fair value — priced about right", upside
+    return "Already past consensus target — priced ahead of where analysts see it", upside
+
+
 def breakout_quality(row):
     """0-100: how attractive the breakout entry is. Healthy momentum scores
     highest; a name that's gone parabolic (40%+ in a month) tapers off the

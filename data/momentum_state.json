@@ -228,7 +228,7 @@
     "rising": true
    },
    "last_seen": "2026-08-31 manual",
-   "prev_status": "dormant"
+   "prev_status": "triggered"
   },
   "CRWD": {
    "status": "triggered",
@@ -310,9 +310,9 @@
    "prev_status": "dormant"
   },
   "ABNB": {
-   "status": "triggered",
+   "status": "watch",
    "analyst_score": 75.0,
-   "composite": 96.3,
+   "composite": 83.3,
    "last_alert": "2026-08-31 03:58",
    "last_alert_composite": 96.3,
    "target_history": [
@@ -327,10 +327,10 @@
     "breakout": true,
     "foundation": true,
     "analyst_turn": true,
-    "rising": true
+    "rising": false
    },
-   "last_seen": "2026-08-31 manual dispatch",
-   "prev_status": "watch"
+   "last_seen": "2026-08-31 manual",
+   "prev_status": "triggered"
   },
   "NVDA": {
    "status": "triggered",
@@ -473,7 +473,7 @@
   "APA": {
    "status": "triggered",
    "analyst_score": 83.0,
-   "composite": 89.4,
+   "composite": 89.0,
    "last_alert": "2026-08-31 13:44",
    "last_alert_composite": 89.0,
    "target_history": [
@@ -490,7 +490,7 @@
     "analyst_turn": true,
     "rising": true
    },
-   "last_seen": "2026-08-31 manual dispatch",
+   "last_seen": "2026-08-31 manual",
    "prev_status": "triggered"
   },
   "VLO": {
@@ -634,6 +634,16 @@
    "triggered": 9,
    "alerted": 3,
    "emailed": true
+  },
+  {
+   "date": "2026-08-31",
+   "label": "manual",
+   "at": "2026-08-31T14:07:23.804193",
+   "breakouts": 3,
+   "watch": 1,
+   "triggered": 2,
+   "alerted": 0,
+   "emailed": false
   }
  ]
 }

@@ -59,13 +59,17 @@ def send_digest(triggered, watchlist, scorecard, run_label, cfg):
 
     trig_html = ""
     for a in triggered:
+        badge, color = _short_growth(a)
+        target_str = f"${a['target']:.0f}" if a.get("target") else "n/a"
         trig_html += (f"<tr><td style='padding:5px 8px;font-weight:bold;'>{a['symbol']}</td>"
                       f"<td style='padding:5px 8px;'>{a['composite']:.0f}/100</td>"
                       f"<td style='padding:5px 8px;'>${a['price']:.2f}</td>"
                       f"<td style='padding:5px 8px;color:#1a7a3f;'>{a['chg_1m']:+.1f}%</td>"
-                      f"<td style='padding:5px 8px;'>{a['analyst_score']:+.0f}</td></tr>")
+                      f"<td style='padding:5px 8px;'>{a['analyst_score']:+.0f}</td>"
+                      f"<td style='padding:5px 8px;'>{target_str}</td>"
+                      f"<td style='padding:5px 8px;color:{color};font-weight:bold;'>{badge}</td></tr>")
     if not trig_html:
-        trig_html = "<tr><td colspan='5' style='padding:5px 8px;color:#888;'>None this run</td></tr>"
+        trig_html = "<tr><td colspan='7' style='padding:5px 8px;color:#888;'>None this run</td></tr>"
 
     watch_html = ""
     for a in watchlist[:12]:
@@ -74,10 +78,14 @@ def send_digest(triggered, watchlist, scorecard, run_label, cfg):
             missing.append("analyst turn")
         if not a["rising"]:
             missing.append("rising")
+        badge, color = _short_growth(a)
+        target_str = f"${a['target']:.0f}" if a.get("target") else "n/a"
         watch_html += (f"<tr><td style='padding:5px 8px;font-weight:bold;'>{a['symbol']}</td>"
                        f"<td style='padding:5px 8px;'>{a['composite']:.0f}/100</td>"
                        f"<td style='padding:5px 8px;'>{a['analyst_score']:+.0f}</td>"
                        f"<td style='padding:5px 8px;'>{a['foundation']:.0f}</td>"
+                       f"<td style='padding:5px 8px;'>{target_str}</td>"
+                       f"<td style='padding:5px 8px;color:{color};font-weight:bold;'>{badge}</td>"
                        f"<td style='padding:5px 8px;color:#b8860b;'>{', '.join(missing)}</td></tr>")
 
     head = "<tr style='color:#888;font-size:11px;text-align:left;'>"
@@ -91,12 +99,14 @@ def send_digest(triggered, watchlist, scorecard, run_label, cfg):
       <div style="border:1px solid #ddd;border-top:none;padding:14px 22px;">
         <h3 style="margin:0 0 6px;font-size:14px;">Triggered (all 4 gates)</h3>
         <table style="width:100%;font-size:13px;border-collapse:collapse;">
-          {head}<th>Ticker</th><th>Score</th><th>Price</th><th>1M</th><th>Analyst</th></tr>
+          {head}<th>Ticker</th><th>Score</th><th>Price</th><th>1M</th><th>Analyst</th>
+          <th>Target</th><th>Growth read</th></tr>
           {trig_html}
         </table>
         <h3 style="margin:16px 0 6px;font-size:14px;">Watch list (breakout + foundation, waiting)</h3>
         <table style="width:100%;font-size:13px;border-collapse:collapse;">
-          {head}<th>Ticker</th><th>Score</th><th>Analyst</th><th>Foundation</th><th>Missing</th></tr>
+          {head}<th>Ticker</th><th>Score</th><th>Analyst</th><th>Foundation</th>
+          <th>Target</th><th>Growth read</th><th>Missing</th></tr>
           {watch_html}
         </table>
       </div>
@@ -107,9 +117,27 @@ def send_digest(triggered, watchlist, scorecard, run_label, cfg):
     return _send(subject, html, cfg)
 
 
+def _short_growth(a):
+    """Table-friendly badge + color for growth_label, for the digest's
+    compact rows — full label is reserved for the alert-email card."""
+    label = a.get("growth_label", "")
+    if "past consensus" in label:
+        return "↓ Past target", "#c0392b"
+    if "Strong room" in label:
+        return "↑↑ Strong room", "#1a7a3f"
+    if "Some room" in label:
+        return "↑ Some room", "#1a7a3f"
+    if "fair value" in label:
+        return "≈ Fair value", "#666"
+    return "n/a", "#888"
+
+
 def _card(a):
     events_html = "".join(f"<li>{e}</li>" for e in a["events"]) or "<li>No dated action — turn driven by estimates/mix</li>"
     upside_str = f"${a['target']:.0f} ({a['upside']:+.0f}%)" if a.get("target") else "n/a"
+    growth_label = a.get("growth_label", "")
+    growth_color = ("#c0392b" if "past consensus" in growth_label else
+                     "#1a7a3f" if "room" in growth_label else "#666")
     return f"""
       <div style="border:1px solid #ddd;border-top:none;padding:16px 22px;">
         <div style="display:flex;justify-content:space-between;">
@@ -136,6 +164,12 @@ def _card(a):
             <td style="color:#666;">Sector</td><td>{a.get('sector', '')}</td>
           </tr>
         </table>
+        <div style="font-size:12px;margin-top:10px;padding:8px 10px;background:#f7f7f7;
+                    border-left:3px solid {growth_color};border-radius:0 4px 4px 0;">
+          <b style="color:{growth_color};">{growth_label}</b>
+          — latest analyst target ${a['target']:.0f} vs. ${a['price']:.2f} now
+          {f"({a['upside']:+.0f}% implied)" if a.get('target') else ""}
+        </div>
         <div style="font-size:12px;margin-top:8px;color:#444;">
           <b>Analyst actions (30d):</b>
           <ul style="margin:4px 0 0 18px;padding:0;">{events_html}</ul>

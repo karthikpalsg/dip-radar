@@ -125,6 +125,7 @@ def main():
 
         target = info.get("targetMeanPrice") or 0
         upside = ((target - row["price"]) / row["price"] * 100) if target else None
+        growth_label, _ = momentum_gates.growth_potential(row["price"], target)
         record = {
             "symbol": sym, "name": meta.get(sym, {}).get("name", sym),
             "sector": meta.get(sym, {}).get("sector", ""),
@@ -133,6 +134,7 @@ def main():
             "foundation": f_score, "foundation_detail": f_detail,
             "analyst_score": a_score, "analyst_detail": a_detail, "events": events,
             "composite": composite, "target": target, "upside": upside,
+            "growth_label": growth_label,
             "fresh_turn": fresh_turn, "rising": rising,
         }
 
@@ -189,9 +191,12 @@ def _print_report(label, alerts, triggered_now, watchlist, scorecard=None):
     print(f"TRIGGERED (all 4 gates): {len(triggered_now)} | new alerts: {len(alerts)}")
     for a in triggered_now:
         flag = "📧" if a in alerts else "(cooldown)"
+        target_str = f"${a['target']:.0f} ({a['upside']:+.0f}%)" if a.get("target") else "n/a"
         print(f"  {flag} {a['symbol']:6s} {a['composite']:5.1f}/100  "
               f"1M {a['chg_1m']:+6.1f}%  off-high {a['from_high']:+5.1f}%  "
-              f"analyst {a['analyst_score']:+5.1f}  foundation {a['foundation']:.0f}")
+              f"analyst {a['analyst_score']:+5.1f}  foundation {a['foundation']:.0f}  "
+              f"target {target_str}")
+        print(f"         {a['growth_label']}")
     print(f"WATCH (breakout + foundation, waiting on turn/rise): {len(watchlist)}")
     for a in watchlist[:15]:
         missing = []
@@ -199,8 +204,10 @@ def _print_report(label, alerts, triggered_now, watchlist, scorecard=None):
             missing.append("analyst turn")
         if not a["rising"]:
             missing.append("rising")
+        target_str = f"${a['target']:.0f} ({a['upside']:+.0f}%)" if a.get("target") else "n/a"
         print(f"    {a['symbol']:6s} {a['composite']:5.1f}/100  "
-              f"analyst {a['analyst_score']:+5.1f}  missing: {', '.join(missing)}")
+              f"analyst {a['analyst_score']:+5.1f}  target {target_str}  "
+              f"missing: {', '.join(missing)}")
     if scorecard:
         print(f"SCORECARD: {summary_line(scorecard)}")
 

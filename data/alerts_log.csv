@@ -84,3 +84,8 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-08-31,manual dispatch,WDC,459.45,72.0,7.0,90.2,-13.8,5.8,665,False
 2026-09-01,close-1h,STLD,235.11,71.1,4.0,88.7,-9.0,7.4,271,True
 2026-09-02,close-1h,DVA,179.57,76.9,40.0,71.1,-21.2,3.3,218,False
+2026-09-03,close-1h,PWR,624.13,81.7,58.0,88.9,-8.6,3.6,770,False
+2026-09-03,close-1h,HUBB,459.95,77.6,36.0,88.8,-10.2,3.8,566,False
+2026-09-03,close-1h,FSLR,206.77,75.7,75.0,64.0,-12.7,3.6,275,False
+2026-09-03,close-1h,FIX,1591.17,65.4,16.0,68.9,-8.3,4.8,2197,False
+2026-09-03,close-1h,INTC,91.56,64.6,13.0,67.7,-9.4,4.9,115,False

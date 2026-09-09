@@ -105,3 +105,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-09-08,close-1h,CMI,565.59,71.1,15.0,89.9,-11.9,3.7,757,False
 2026-09-08,close-1h,XYL,109.19,70.5,32.0,73.6,-8.9,3.3,154,False
 2026-09-08,close-1h,BA,211.85,73.1,42.0,71.2,-9.6,3.0,275,False
+2026-09-09,close-1h,DDOG,224.85,83.7,25.0,100.0,-13.8,7.5,285,False

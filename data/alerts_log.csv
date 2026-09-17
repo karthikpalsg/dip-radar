@@ -123,3 +123,5 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-09-14,close-1h,AXON,493.46,74.2,10.0,99.9,-19.8,3.1,706,False
 2026-09-16,close-1h,COHR,290.20,80.3,20.0,79.4,-17.4,9.8,415,False
 2026-09-16,close-1h,GEV,932.65,69.0,8.0,75.1,-13.6,6.6,1237,False
+2026-09-17,close-1h,STX,798.66,74.6,25.0,91.4,-11.6,3.5,1125,False
+2026-09-17,close-1h,ALGN,151.74,65.9,8.0,85.8,-9.6,3.2,209,False

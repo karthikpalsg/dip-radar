@@ -125,3 +125,5 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-09-16,close-1h,GEV,932.65,69.0,8.0,75.1,-13.6,6.6,1237,False
 2026-09-17,close-1h,STX,798.66,74.6,25.0,91.4,-11.6,3.5,1125,False
 2026-09-17,close-1h,ALGN,151.74,65.9,8.0,85.8,-9.6,3.2,209,False
+2026-09-18,midday,AMAT,434.90,76.6,20.0,97.3,-12.3,4.7,641,False
+2026-09-18,midday,CDNS,282.57,70.3,8.0,100.0,-10.3,3.1,402,False

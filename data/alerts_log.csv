@@ -127,3 +127,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-09-17,close-1h,ALGN,151.74,65.9,8.0,85.8,-9.6,3.2,209,False
 2026-09-18,midday,AMAT,434.90,76.6,20.0,97.3,-12.3,4.7,641,False
 2026-09-18,midday,CDNS,282.57,70.3,8.0,100.0,-10.3,3.1,402,False
+2026-09-21,close-1h,Q,122.03,75.9,15.0,96.6,-8.5,6.5,177,False

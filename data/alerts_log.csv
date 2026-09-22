@@ -128,3 +128,6 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-09-18,midday,AMAT,434.90,76.6,20.0,97.3,-12.3,4.7,641,False
 2026-09-18,midday,CDNS,282.57,70.3,8.0,100.0,-10.3,3.1,402,False
 2026-09-21,close-1h,Q,122.03,75.9,15.0,96.6,-8.5,6.5,177,False
+2026-09-22,close-1h,AXON,460.86,76.8,10.0,99.9,-26.6,4.2,704,False
+2026-09-22,close-1h,DLTR,116.97,75.7,67.0,61.8,-11.0,4.5,136,False
+2026-09-22,close-1h,GEHC,66.16,68.3,16.0,77.4,-11.6,4.2,82,True

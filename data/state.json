@@ -14737,5 +14737,6 @@
    "alerted": 0,
    "emailed": false
   }
- ]
+ ],
+ "stale_alert_sent_at": "2026-10-13T20:17:56.860086"
 }

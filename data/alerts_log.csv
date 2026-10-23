@@ -159,3 +159,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-10-21,close-1h,INTC,92.68,67.1,12.0,67.7,-25.2,3.1,117,False
 2026-10-21,close-1h,LITE,850.86,66.6,23.0,69.1,-10.0,3.4,1181,False
 2026-10-22,close-1h,PANW,356.40,84.2,42.0,100.0,-9.4,4.7,399,False
+2026-10-23,close-1h,HPE,57.16,82.9,47.0,94.2,-10.0,3.7,72,False

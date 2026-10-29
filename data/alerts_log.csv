@@ -169,3 +169,4 @@ date,run,ticker,price,composite,analyst_score,foundation,chg_1m,off_low,target,f
 2026-10-27,close-1h,SNDK,1302.10,71.4,2.0,85.0,-24.0,5.2,2144,False
 2026-10-27,close-1h,PWR,580.01,71.2,8.0,88.9,-10.0,6.1,761,False
 2026-10-28,close-1h,DELL,492.40,77.0,17.0,85.0,-8.6,9.2,595,False
+2026-10-29,close-1h,KEYS,328.48,74.1,10.0,100.0,-9.8,5.4,418,False

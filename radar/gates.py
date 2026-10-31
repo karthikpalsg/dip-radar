@@ -12,6 +12,13 @@ COLLAPSE_3M_PCT = -40.0    # >40% down in 3 months = deterioration, not a dip
 # Gate 4 thresholds
 RISE_OFF_LOW_PCT = 3.0     # last close at least 3% above the 21-day low
 
+# Volatility stop: 3x daily vol, never tighter than the old flat 8%.
+# Backtest on 172 alerts (Jul-Oct 2026): flat 8% was touched within 20 days by
+# 43/51/66% of low/mid/high-vol names; this rule evens that out to ~43/46/36%.
+STOP_VOL_MULT = 3.0
+STOP_FLOOR_PCT = 8.0
+STOP_CAP_PCT = 25.0
+
 
 def fetch_closes(symbols, period="1y"):
     """Batch daily closes for the whole universe in one threaded download."""
@@ -39,10 +46,12 @@ def price_stats(closes):
         ma5 = float(s.iloc[-5:].mean())
         low_21d = float(s.iloc[-21:].min())
         off_low = _pct(price, low_21d)
+        daily_vol = float(s.iloc[-21:].pct_change().std() * 100)
         stats[sym] = {
             "price": price, "chg_1w": chg_1w, "chg_1m": chg_1m, "chg_3m": chg_3m,
             "high_52w": high_52w, "from_high": from_high,
             "ma5": ma5, "low_21d": low_21d, "off_low": off_low,
+            "daily_vol": daily_vol,
         }
     return pd.DataFrame.from_dict(stats, orient="index")
 
@@ -80,6 +89,13 @@ def rising_strength(row):
         return min(40.0, max(0.0, row["off_low"] * 4))
     lift = row["off_low"]                   # % above 21-day low
     return float(min(100.0, 50 + (lift - 3) * 50 / 7))  # 3% -> 50, 10%+ -> 100
+
+
+def vol_stop(price, daily_vol):
+    """Volatility-scaled stop. Returns (stop_price, stop_pct)."""
+    pct = STOP_FLOOR_PCT if pd.isna(daily_vol) else daily_vol * STOP_VOL_MULT
+    pct = max(STOP_FLOOR_PCT, min(STOP_CAP_PCT, pct))
+    return round(price * (1 - pct / 100), 2), round(pct, 1)
 
 
 def _pct(now, base):

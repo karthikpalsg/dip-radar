@@ -6,6 +6,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 RUN_EMOJI = {"open+1h": "🌅", "midday": "🕛", "close-1h": "🌆", "manual": "🔧"}
+# Warn (not block) on alerts this close to a report. The worst 20-day alerts
+# clustered 2-8 days before earnings, but that's too small a sample for a gate.
+EARNINGS_WARN_DAYS = 10
 
 
 def send_staleness_warning(hours_since, last_run, cfg):
@@ -177,6 +180,10 @@ def _send(subject, html, cfg):
 def _card(a):
     events_html = "".join(f"<li>{e}</li>" for e in a["events"]) or "<li>No dated action — turn driven by estimates/mix</li>"
     upside_str = f"${a['target']:.0f} ({a['upside']:+.0f}%)" if a.get("target") else "n/a"
+    days = a.get("days_to_earnings")
+    earnings_str = f"{a['earnings_date']} ({days}d)" if days is not None else "n/a"
+    earnings_warn = days is not None and days <= EARNINGS_WARN_DAYS
+    earnings_style = "color:#c0392b;font-weight:bold;" if earnings_warn else ""
     return f"""
       <div style="border:1px solid #ddd;border-top:none;padding:16px 22px;">
         <div style="display:flex;justify-content:space-between;">
@@ -201,6 +208,10 @@ def _card(a):
           </tr><tr>
             <td style="padding:4px 0;color:#666;">Consensus target</td><td>{upside_str}</td>
             <td style="color:#666;">Sector</td><td>{a.get('sector', '')}</td>
+          </tr><tr>
+            <td style="padding:4px 0;color:#666;">Vol stop</td><td>${a['stop_price']:.2f} (-{a['stop_pct']:.1f}%)</td>
+            <td style="color:#666;">Next earnings</td>
+            <td style="{earnings_style}">{'⚠ ' if earnings_warn else ''}{earnings_str}</td>
           </tr>
         </table>
         <div style="font-size:12px;margin-top:8px;color:#444;">

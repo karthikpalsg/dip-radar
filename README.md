@@ -13,6 +13,11 @@ stock passes **all four gates** at once:
 Alerts email from `GMAIL_ADDRESS` to `ALERT_TO` (set via GitHub Secrets), with a
 7-day per-ticker cooldown (re-alert early only if the composite score jumps 10+).
 
+Each alert also carries two risk fields that never affect the gates or composite:
+
+- **Next earnings**: flagged ⚠ when the report is within 10 days. A warning, not a gate.
+- **Vol stop**: 3x 20-day daily volatility, minimum 8%, maximum 25% (`gates.vol_stop`).
+
 ## Runs
 
 | Run | ET | Singapore (EDT) | Purpose |

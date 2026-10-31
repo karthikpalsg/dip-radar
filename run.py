@@ -19,7 +19,7 @@ import yfinance as yf
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from radar import gates, state as st
 from radar.analyst import analyst_momentum
-from radar.emailer import send_alerts, send_digest, send_staleness_warning
+from radar.emailer import EARNINGS_WARN_DAYS, send_alerts, send_digest, send_staleness_warning
 from radar.foundation import FOUNDATION_THRESHOLD, foundation_score
 from radar.guard import NY, resolve_run
 from radar.scorecard import grade_alerts, summary_line
@@ -107,6 +107,8 @@ def main():
 
         target = info.get("targetMeanPrice") or 0
         upside = ((target - row["price"]) / row["price"] * 100) if target else None
+        earnings_date, days_to_earnings = _next_earnings(info)
+        stop_price, stop_pct = gates.vol_stop(row["price"], row["daily_vol"])
         record = {
             "symbol": sym, "name": meta.get(sym, {}).get("name", sym),
             "sector": meta.get(sym, {}).get("sector", ""),
@@ -116,6 +118,8 @@ def main():
             "analyst_score": a_score, "analyst_detail": a_detail, "events": events,
             "composite": composite, "target": target, "upside": upside,
             "fresh_turn": fresh_turn, "rising": rising,
+            "earnings_date": earnings_date, "days_to_earnings": days_to_earnings,
+            "stop_price": stop_price, "stop_pct": stop_pct,
         }
 
         all_four = analyst_turn and rising  # dip + foundation already true here
@@ -134,6 +138,8 @@ def main():
             "gates": {"dip": True, "foundation": True,
                       "analyst_turn": analyst_turn, "rising": rising},
             "last_seen": f"{today} {label}", "prev_status": prev_status,
+            "earnings_date": earnings_date, "days_to_earnings": days_to_earnings,
+            "stop_price": stop_price, "stop_pct": stop_pct,
         })
 
     alerts.sort(key=lambda a: -a["composite"])
@@ -166,6 +172,20 @@ def main():
     })
     st.save_state(app_state)
     print("State saved.")
+
+
+def _next_earnings(info):
+    """Next report date from the yfinance quote payload, no extra API call.
+    Returns (YYYY-MM-DD, days away), or ("", None) if unknown or already past."""
+    ts = info.get("earningsTimestampStart") or info.get("earningsTimestamp")
+    if not ts:
+        return "", None
+    try:
+        report = datetime.fromtimestamp(ts).date()
+    except (TypeError, ValueError, OSError):
+        return "", None
+    days = (report - datetime.now().date()).days
+    return (report.isoformat(), days) if days >= 0 else ("", None)
 
 
 def _check_staleness():
@@ -203,7 +223,9 @@ def _print_report(label, alerts, triggered_now, watchlist, scorecard=None):
         flag = "📧" if a in alerts else "(cooldown)"
         print(f"  {flag} {a['symbol']:6s} {a['composite']:5.1f}/100  "
               f"1M {a['chg_1m']:+6.1f}%  off-low {a['off_low']:+5.1f}%  "
-              f"analyst {a['analyst_score']:+5.1f}  foundation {a['foundation']:.0f}")
+              f"analyst {a['analyst_score']:+5.1f}  foundation {a['foundation']:.0f}  "
+              f"stop ${a['stop_price']:.2f} (-{a['stop_pct']:.1f}%)"
+              f"{_earnings_note(a)}")
     print(f"WATCH (dip + foundation, waiting on turn/rise): {len(watchlist)}")
     for a in watchlist[:15]:
         missing = []
@@ -217,6 +239,13 @@ def _print_report(label, alerts, triggered_now, watchlist, scorecard=None):
         print(f"SCORECARD: {summary_line(scorecard)}")
 
 
+def _earnings_note(a):
+    days = a.get("days_to_earnings")
+    if days is not None and days <= EARNINGS_WARN_DAYS:
+        return f"  ⚠ earnings in {days}d"
+    return ""
+
+
 def _log_alerts(alerts, label, today):
     if not alerts:
         return
@@ -226,13 +255,16 @@ def _log_alerts(alerts, label, today):
         if new_file:
             w.writerow(["date", "run", "ticker", "price", "composite",
                         "analyst_score", "foundation", "chg_1m", "off_low",
-                        "target", "fresh_turn"])
+                        "target", "fresh_turn", "days_to_earnings",
+                        "stop_price", "stop_pct"])
         for a in alerts:
             w.writerow([today, label, a["symbol"], f"{a['price']:.2f}",
                         a["composite"], a["analyst_score"], a["foundation"],
                         f"{a['chg_1m']:.1f}", f"{a['off_low']:.1f}",
                         f"{a['target']:.0f}" if a["target"] else "",
-                        a["fresh_turn"]])
+                        a["fresh_turn"],
+                        "" if a["days_to_earnings"] is None else a["days_to_earnings"],
+                        f"{a['stop_price']:.2f}", a["stop_pct"]])
 
 
 def _parse_args():

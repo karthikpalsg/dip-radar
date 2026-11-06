@@ -1568,7 +1568,7 @@
   "MU": {
    "status": "watch",
    "analyst_score": 10.0,
-   "composite": 61.1,
+   "composite": 60.2,
    "last_alert": "2026-10-27 19:31",
    "last_alert_composite": 89.1,
    "target_history": [
@@ -1681,8 +1681,8 @@
    "prev_status": "watch",
    "earnings_date": "2026-12-23",
    "days_to_earnings": 47,
-   "stop_price": 575.79,
-   "stop_pct": 16.9
+   "stop_price": 572.66,
+   "stop_pct": 16.7
   },
   "MPWR": {
    "status": "watch",
@@ -1808,13 +1808,13 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 1025.13,
+   "stop_price": 1024.49,
    "stop_pct": 13.7
   },
   "JBL": {
    "status": "watch",
    "analyst_score": 25.0,
-   "composite": 64.0,
+   "composite": 63.6,
    "last_alert": "2026-10-27 19:31",
    "last_alert_composite": 74.2,
    "target_history": [
@@ -1955,13 +1955,13 @@
    "prev_status": "watch",
    "earnings_date": "2026-12-16",
    "days_to_earnings": 40,
-   "stop_price": 214.8,
-   "stop_pct": 10.7
+   "stop_price": 213.53,
+   "stop_pct": 10.6
   },
   "GNRC": {
    "status": "watch",
    "analyst_score": 90.0,
-   "composite": 79.3,
+   "composite": 79.0,
    "last_alert": "2026-09-11 17:48",
    "last_alert_composite": 72.8,
    "target_history": [
@@ -2086,7 +2086,7 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 154.3,
+   "stop_price": 153.74,
    "stop_pct": 13.0
   },
   "FLEX": {
@@ -2251,7 +2251,7 @@
   "MCHP": {
    "status": "watch",
    "analyst_score": -50.0,
-   "composite": 44.1,
+   "composite": 44.5,
    "last_alert": "2026-09-08 17:59",
    "last_alert_composite": 79.8,
    "target_history": [
@@ -2364,8 +2364,8 @@
    "prev_status": "watch",
    "earnings_date": "2027-02-04",
    "days_to_earnings": 90,
-   "stop_price": 50.57,
-   "stop_pct": 13.8
+   "stop_price": 49.63,
+   "stop_pct": 14.1
   },
   "IBM": {
    "status": "watch",
@@ -2671,7 +2671,7 @@
   "FCX": {
    "status": "watch",
    "analyst_score": 5.0,
-   "composite": 60.7,
+   "composite": 60.3,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -2724,8 +2724,8 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-21",
    "days_to_earnings": 76,
-   "stop_price": 54.81,
-   "stop_pct": 8.3
+   "stop_price": 54.5,
+   "stop_pct": 8.2
   },
   "CIEN": {
    "status": "watch",
@@ -3642,7 +3642,7 @@
   "PWR": {
    "status": "watch",
    "analyst_score": 83.0,
-   "composite": 80.9,
+   "composite": 80.3,
    "last_alert": "2026-10-27 19:31",
    "last_alert_composite": 71.2,
    "target_history": [
@@ -3743,13 +3743,13 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 459.71,
-   "stop_pct": 15.9
+   "stop_price": 456.48,
+   "stop_pct": 15.6
   },
   "KEYS": {
    "status": "watch",
    "analyst_score": 15.0,
-   "composite": 70.8,
+   "composite": 69.5,
    "last_alert": "2026-10-29 19:45",
    "last_alert_composite": 74.1,
    "target_history": [
@@ -3830,8 +3830,8 @@
    "prev_status": "watch",
    "earnings_date": "2026-11-19",
    "days_to_earnings": 13,
-   "stop_price": 240.97,
-   "stop_pct": 12.1
+   "stop_price": 239.18,
+   "stop_pct": 11.8
   },
   "SLB": {
    "status": "watch",
@@ -4106,7 +4106,7 @@
   "AKAM": {
    "status": "watch",
    "analyst_score": -60.0,
-   "composite": 43.4,
+   "composite": 43.5,
    "last_alert": "2026-10-21 18:47",
    "last_alert_composite": 79.1,
    "target_history": [
@@ -4223,7 +4223,7 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 72.22,
+   "stop_price": 72.32,
    "stop_pct": 13.2
   },
   "CCI": {
@@ -4444,7 +4444,7 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 548.04,
+   "stop_price": 547.38,
    "stop_pct": 9.8
   },
   "CCL": {
@@ -4664,7 +4664,7 @@
   "BKR": {
    "status": "watch",
    "analyst_score": -22.0,
-   "composite": 47.0,
+   "composite": 46.8,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -4689,8 +4689,8 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-25",
    "days_to_earnings": 80,
-   "stop_price": 42.84,
-   "stop_pct": 10.6
+   "stop_price": 42.74,
+   "stop_pct": 10.5
   },
   "APO": {
    "status": "watch",
@@ -4793,7 +4793,7 @@
   "NFLX": {
    "status": "watch",
    "analyst_score": -80.0,
-   "composite": 39.4,
+   "composite": 39.2,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -4890,7 +4890,7 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-19",
    "days_to_earnings": 74,
-   "stop_price": 58.54,
+   "stop_price": 58.3,
    "stop_pct": 8.0
   },
   "LYB": {
@@ -4929,7 +4929,7 @@
   "CSCO": {
    "status": "watch",
    "analyst_score": -48.0,
-   "composite": 43.1,
+   "composite": 43.4,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -4982,7 +4982,7 @@
    "prev_status": "watch",
    "earnings_date": "2026-11-12",
    "days_to_earnings": 6,
-   "stop_price": 87.0,
+   "stop_price": 86.27,
    "stop_pct": 8.0
   },
   "STZ": {
@@ -5142,7 +5142,7 @@
   "SNPS": {
    "status": "watch",
    "analyst_score": 20.0,
-   "composite": 69.2,
+   "composite": 69.4,
    "last_alert": "2026-07-31 17:00",
    "last_alert_composite": 77.7,
    "target_history": [
@@ -5219,7 +5219,7 @@
    "prev_status": "watch",
    "earnings_date": "2026-12-08",
    "days_to_earnings": 32,
-   "stop_price": 408.67,
+   "stop_price": 409.59,
    "stop_pct": 9.1
   },
   "TKO": {
@@ -5390,7 +5390,7 @@
   "CDNS": {
    "status": "watch",
    "analyst_score": 52.0,
-   "composite": 76.7,
+   "composite": 76.8,
    "last_alert": "2026-09-18 17:45",
    "last_alert_composite": 70.3,
    "target_history": [
@@ -5543,7 +5543,7 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 290.77,
+   "stop_price": 291.39,
    "stop_pct": 9.0
   },
   "CPRT": {
@@ -5644,7 +5644,7 @@
   "ADI": {
    "status": "watch",
    "analyst_score": 14.0,
-   "composite": 63.0,
+   "composite": 62.7,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -5693,8 +5693,8 @@
    "prev_status": "watch",
    "earnings_date": "2026-11-24",
    "days_to_earnings": 18,
-   "stop_price": 326.57,
-   "stop_pct": 10.6
+   "stop_price": 324.69,
+   "stop_pct": 10.5
   },
   "CRH": {
    "status": "watch",
@@ -6167,7 +6167,7 @@
   "CAT": {
    "status": "watch",
    "analyst_score": -45.0,
-   "composite": 37.6,
+   "composite": 37.4,
    "last_alert": "2026-08-03 16:55",
    "last_alert_composite": 67.5,
    "target_history": [
@@ -6312,8 +6312,8 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-28",
    "days_to_earnings": 83,
-   "stop_price": 507.54,
-   "stop_pct": 9.4
+   "stop_price": 506.69,
+   "stop_pct": 9.3
   },
   "EMR": {
    "status": "watch",
@@ -6341,7 +6341,7 @@
   "DELL": {
    "status": "watch",
    "analyst_score": 5.0,
-   "composite": 54.7,
+   "composite": 53.5,
    "last_alert": "2026-10-28 19:42",
    "last_alert_composite": 77.0,
    "target_history": [
@@ -6414,8 +6414,8 @@
    "prev_status": "watch",
    "earnings_date": "2026-11-24",
    "days_to_earnings": 18,
-   "stop_price": 270.72,
-   "stop_pct": 18.6
+   "stop_price": 267.87,
+   "stop_pct": 18.3
   },
   "TDG": {
    "status": "watch",
@@ -6947,7 +6947,7 @@
   "GEV": {
    "status": "watch",
    "analyst_score": -27.0,
-   "composite": 45.3,
+   "composite": 45.2,
    "last_alert": "2026-09-16 18:16",
    "last_alert_composite": 69.0,
    "target_history": [
@@ -7048,13 +7048,13 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-27",
    "days_to_earnings": 82,
-   "stop_price": 669.81,
+   "stop_price": 667.93,
    "stop_pct": 13.8
   },
   "SMCI": {
    "status": "watch",
    "analyst_score": 67.0,
-   "composite": 70.4,
+   "composite": 70.3,
    "last_alert": "2026-10-27 19:31",
    "last_alert_composite": 88.7,
    "target_history": [
@@ -7123,7 +7123,7 @@
    "prev_status": "watch",
    "earnings_date": "2027-02-02",
    "days_to_earnings": 88,
-   "stop_price": 24.09,
+   "stop_price": 24.07,
    "stop_pct": 16.5
   },
   "TEL": {
@@ -8011,7 +8011,7 @@
   "APH": {
    "status": "watch",
    "analyst_score": 85.0,
-   "composite": 75.6,
+   "composite": 75.8,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -8052,13 +8052,13 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-27",
    "days_to_earnings": 82,
-   "stop_price": 65.54,
-   "stop_pct": 11.7
+   "stop_price": 65.74,
+   "stop_pct": 11.8
   },
   "AMD": {
    "status": "watch",
    "analyst_score": 85.0,
-   "composite": 86.2,
+   "composite": 85.8,
    "last_alert": "2026-08-12 15:27",
    "last_alert_composite": 94.7,
    "target_history": [
@@ -8155,8 +8155,8 @@
    "prev_status": "watch",
    "earnings_date": "2027-02-02",
    "days_to_earnings": 88,
-   "stop_price": 362.53,
-   "stop_pct": 19.4
+   "stop_price": 360.58,
+   "stop_pct": 19.1
   },
   "UBER": {
    "status": "watch",
@@ -8688,7 +8688,7 @@
   "CMI": {
    "status": "watch",
    "analyst_score": -42.0,
-   "composite": 41.2,
+   "composite": 41.0,
    "last_alert": "2026-09-08 17:59",
    "last_alert_composite": 71.1,
    "target_history": [
@@ -8809,13 +8809,13 @@
    "prev_status": "watch",
    "earnings_date": "2027-02-04",
    "days_to_earnings": 90,
-   "stop_price": 416.26,
+   "stop_price": 414.44,
    "stop_pct": 8.0
   },
   "HOOD": {
    "status": "watch",
    "analyst_score": -60.0,
-   "composite": 41.8,
+   "composite": 41.9,
    "last_alert": "2026-10-21 18:47",
    "last_alert_composite": 86.6,
    "target_history": [
@@ -8932,13 +8932,13 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 70.74,
+   "stop_price": 70.9,
    "stop_pct": 12.3
   },
   "ETN": {
    "status": "watch",
    "analyst_score": 32.0,
-   "composite": 73.7,
+   "composite": 73.5,
    "last_alert": "2026-10-27 19:31",
    "last_alert_composite": 78.6,
    "target_history": [
@@ -9003,8 +9003,8 @@
    "prev_status": "watch",
    "earnings_date": "2027-02-02",
    "days_to_earnings": 88,
-   "stop_price": 298.98,
-   "stop_pct": 12.8
+   "stop_price": 298.16,
+   "stop_pct": 12.7
   },
   "HUBB": {
    "status": "watch",
@@ -9086,13 +9086,13 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 395.66,
+   "stop_price": 395.5,
    "stop_pct": 8.0
   },
   "CHRW": {
    "status": "watch",
    "analyst_score": -52.0,
-   "composite": 35.3,
+   "composite": 35.2,
    "last_alert": "2026-08-14 15:14",
    "last_alert_composite": 68.0,
    "target_history": [
@@ -9201,13 +9201,13 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-27",
    "days_to_earnings": 82,
-   "stop_price": 113.2,
+   "stop_price": 112.94,
    "stop_pct": 9.8
   },
   "TPL": {
    "status": "watch",
    "analyst_score": 12.0,
-   "composite": 61.8,
+   "composite": 62.0,
    "last_alert": "2026-08-24 19:35",
    "last_alert_composite": 72.1,
    "target_history": [
@@ -9288,7 +9288,7 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 244.36,
+   "stop_price": 245.2,
    "stop_pct": 10.2
   },
   "NVR": {
@@ -9443,7 +9443,7 @@
   "META": {
    "status": "watch",
    "analyst_score": 25.0,
-   "composite": 66.9,
+   "composite": 66.5,
    "last_alert": "2026-11-04 20:52",
    "last_alert_composite": 76.4,
    "target_history": [
@@ -9533,10 +9533,10 @@
     "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "triggered",
+   "prev_status": "watch",
    "earnings_date": "2027-01-27",
    "days_to_earnings": 82,
-   "stop_price": 566.44,
+   "stop_price": 562.52,
    "stop_pct": 8.0
   },
   "FICO": {
@@ -10090,7 +10090,7 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 151.99,
+   "stop_price": 151.75,
    "stop_pct": 8.0
   },
   "CVS": {
@@ -10547,7 +10547,7 @@
   "DDOG": {
    "status": "watch",
    "analyst_score": -17.0,
-   "composite": 53.8,
+   "composite": 52.9,
    "last_alert": "2026-09-09 18:44",
    "last_alert_composite": 83.7,
    "target_history": [
@@ -10620,8 +10620,8 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 149.49,
-   "stop_pct": 17.2
+   "stop_price": 148.58,
+   "stop_pct": 17.1
   },
   "ALGN": {
    "status": "watch",
@@ -10881,7 +10881,7 @@
    "prev_status": "watch",
    "earnings_date": "2026-12-09",
    "days_to_earnings": 33,
-   "stop_price": 262.85,
+   "stop_price": 262.6,
    "stop_pct": 10.3
   },
   "NI": {
@@ -11581,8 +11581,8 @@
   },
   "GOOG": {
    "status": "watch",
-   "analyst_score": 15.0,
-   "composite": 65.5,
+   "analyst_score": 25.0,
+   "composite": 68.5,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -11627,13 +11627,13 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 258.98,
+   "stop_price": 257.99,
    "stop_pct": 9.2
   },
   "GOOGL": {
    "status": "watch",
    "analyst_score": -85.0,
-   "composite": 42.9,
+   "composite": 42.4,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -11678,8 +11678,8 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 259.18,
-   "stop_pct": 9.5
+   "stop_price": 258.16,
+   "stop_pct": 9.4
   },
   "RL": {
    "status": "watch",
@@ -11944,7 +11944,7 @@
    "prev_status": "watch",
    "earnings_date": "2026-11-18",
    "days_to_earnings": 12,
-   "stop_price": 278.24,
+   "stop_price": 276.75,
    "stop_pct": 11.7
   },
   "IRM": {
@@ -14037,7 +14037,7 @@
   "TT": {
    "status": "watch",
    "analyst_score": -10.0,
-   "composite": 53.2,
+   "composite": 53.3,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -14086,7 +14086,7 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-28",
    "days_to_earnings": 83,
-   "stop_price": 369.55,
+   "stop_price": 369.94,
    "stop_pct": 8.0
   },
   "JBHT": {
@@ -16421,9 +16421,9 @@
    "prev_status": "watch"
   },
   "CEG": {
-   "status": "triggered",
+   "status": "watch",
    "analyst_score": 38.0,
-   "composite": 74.8,
+   "composite": 65.3,
    "last_alert": "2026-11-06 20:29",
    "last_alert_composite": 74.8,
    "target_history": [
@@ -16446,14 +16446,14 @@
     "dip": true,
     "foundation": true,
     "analyst_turn": true,
-    "rising": true
+    "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "watch",
+   "prev_status": "triggered",
    "earnings_date": "2026-11-09",
    "days_to_earnings": 3,
-   "stop_price": 228.12,
-   "stop_pct": 9.6
+   "stop_price": 226.69,
+   "stop_pct": 9.3
   },
   "CRM": {
    "status": "watch",
@@ -16564,7 +16564,7 @@
   "T": {
    "status": "watch",
    "analyst_score": -56.0,
-   "composite": 48.1,
+   "composite": 38.8,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -16627,14 +16627,14 @@
     "dip": true,
     "foundation": true,
     "analyst_turn": false,
-    "rising": true
+    "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
    "prev_status": "watch",
    "earnings_date": "2027-01-27",
    "days_to_earnings": 82,
-   "stop_price": 19.95,
-   "stop_pct": 8.2
+   "stop_price": 19.79,
+   "stop_pct": 8.3
   },
   "SBUX": {
    "status": "dip",
@@ -16649,7 +16649,7 @@
   "HPQ": {
    "status": "watch",
    "analyst_score": -10.0,
-   "composite": 49.1,
+   "composite": 48.5,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -16686,8 +16686,8 @@
    "prev_status": "watch",
    "earnings_date": "2026-11-24",
    "days_to_earnings": 18,
-   "stop_price": 25.74,
-   "stop_pct": 10.7
+   "stop_price": 25.43,
+   "stop_pct": 10.8
   },
   "VTR": {
    "status": "watch",
@@ -16955,7 +16955,7 @@
   "IVZ": {
    "status": "watch",
    "analyst_score": 8.0,
-   "composite": 50.1,
+   "composite": 49.8,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -16977,10 +16977,10 @@
     "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "dip",
+   "prev_status": "watch",
    "earnings_date": "2027-01-26",
    "days_to_earnings": 81,
-   "stop_price": 24.96,
+   "stop_price": 24.78,
    "stop_pct": 8.4
   },
   "NTRS": {
@@ -17096,7 +17096,7 @@
   "ANET": {
    "status": "triggered",
    "analyst_score": 75.0,
-   "composite": 92.2,
+   "composite": 92.0,
    "last_alert": "2026-11-04 20:52",
    "last_alert_composite": 93.2,
    "target_history": [
@@ -17153,13 +17153,13 @@
    "prev_status": "triggered",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 145.45,
-   "stop_pct": 14.6
+   "stop_price": 145.34,
+   "stop_pct": 14.5
   },
   "HPE": {
    "status": "watch",
    "analyst_score": -12.0,
-   "composite": 51.2,
+   "composite": 50.2,
    "last_alert": "2026-10-23 18:34",
    "last_alert_composite": 82.9,
    "target_history": [
@@ -17212,8 +17212,8 @@
    "prev_status": "watch",
    "earnings_date": "2026-11-23",
    "days_to_earnings": 17,
-   "stop_price": 38.63,
-   "stop_pct": 14.2
+   "stop_price": 38.36,
+   "stop_pct": 14.1
   },
   "DOC": {
    "status": "watch",
@@ -17249,7 +17249,7 @@
   "IBKR": {
    "status": "triggered",
    "analyst_score": 35.0,
-   "composite": 76.6,
+   "composite": 75.9,
    "last_alert": "2026-11-06 20:29",
    "last_alert_composite": 76.6,
    "target_history": [
@@ -17291,11 +17291,11 @@
     "rising": true
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "watch",
+   "prev_status": "triggered",
    "earnings_date": "2027-01-26",
    "days_to_earnings": 81,
-   "stop_price": 68.9,
-   "stop_pct": 9.5
+   "stop_price": 68.62,
+   "stop_pct": 9.4
   },
   "GM": {
    "status": "dip",
@@ -17335,7 +17335,7 @@
    "prev_status": "watch",
    "earnings_date": "2026-12-01",
    "days_to_earnings": 25,
-   "stop_price": 191.2,
+   "stop_price": 190.62,
    "stop_pct": 12.1
   },
   "DXCM": {
@@ -17403,7 +17403,7 @@
   "FFIV": {
    "status": "watch",
    "analyst_score": 3.0,
-   "composite": 59.9,
+   "composite": 58.9,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17444,13 +17444,13 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-26",
    "days_to_earnings": 81,
-   "stop_price": 266.63,
-   "stop_pct": 15.1
+   "stop_price": 264.15,
+   "stop_pct": 15.0
   },
   "FTNT": {
    "status": "watch",
    "analyst_score": -35.0,
-   "composite": 41.2,
+   "composite": 40.8,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17487,7 +17487,7 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 101.17,
+   "stop_price": 100.03,
    "stop_pct": 15.7
   },
   "NOW": {
@@ -17527,16 +17527,16 @@
     "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "triggered",
+   "prev_status": "watch",
    "earnings_date": "2027-01-27",
    "days_to_earnings": 82,
-   "stop_price": 81.42,
+   "stop_price": 81.33,
    "stop_pct": 20.1
   },
   "NVDA": {
    "status": "watch",
    "analyst_score": -8.0,
-   "composite": 60.2,
+   "composite": 59.8,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17565,13 +17565,13 @@
    "prev_status": "watch",
    "earnings_date": "2026-11-17",
    "days_to_earnings": 11,
-   "stop_price": 171.23,
-   "stop_pct": 9.0
+   "stop_price": 170.15,
+   "stop_pct": 8.8
   },
   "NTAP": {
    "status": "watch",
    "analyst_score": -5.0,
-   "composite": 59.9,
+   "composite": 58.2,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17604,13 +17604,13 @@
    "prev_status": "watch",
    "earnings_date": "2026-12-01",
    "days_to_earnings": 25,
-   "stop_price": 150.31,
-   "stop_pct": 12.4
+   "stop_price": 148.28,
+   "stop_pct": 12.2
   },
   "ADM": {
    "status": "watch",
    "analyst_score": 12.0,
-   "composite": 52.4,
+   "composite": 52.3,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17639,13 +17639,13 @@
    "prev_status": "watch",
    "earnings_date": "2027-02-02",
    "days_to_earnings": 88,
-   "stop_price": 65.07,
+   "stop_price": 64.5,
    "stop_pct": 8.0
   },
   "ZBRA": {
    "status": "watch",
    "analyst_score": 32.0,
-   "composite": 70.1,
+   "composite": 69.7,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17674,7 +17674,7 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 298.82,
+   "stop_price": 296.25,
    "stop_pct": 8.0
   },
   "ORCL": {
@@ -17707,7 +17707,7 @@
   "VLO": {
    "status": "watch",
    "analyst_score": 75.0,
-   "composite": 73.7,
+   "composite": 73.9,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17732,13 +17732,13 @@
    "prev_status": "watch",
    "earnings_date": "2027-01-28",
    "days_to_earnings": 83,
-   "stop_price": 313.25,
+   "stop_price": 311.52,
    "stop_pct": 9.9
   },
   "TRMB": {
    "status": "watch",
    "analyst_score": -62.0,
-   "composite": 30.0,
+   "composite": 30.1,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17763,13 +17763,13 @@
    "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 47.05,
+   "stop_price": 47.15,
    "stop_pct": 12.8
   },
   "PLTR": {
    "status": "watch",
    "analyst_score": 83.0,
-   "composite": 80.9,
+   "composite": 80.8,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17794,13 +17794,13 @@
    "prev_status": "watch",
    "earnings_date": "2027-02-01",
    "days_to_earnings": 87,
-   "stop_price": 143.25,
+   "stop_price": 143.07,
    "stop_pct": 10.9
   },
   "MPC": {
    "status": "watch",
    "analyst_score": 67.0,
-   "composite": 71.1,
+   "composite": 71.3,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17825,13 +17825,13 @@
    "prev_status": "watch",
    "earnings_date": "2027-02-02",
    "days_to_earnings": 88,
-   "stop_price": 339.88,
+   "stop_price": 337.6,
    "stop_pct": 9.2
   },
   "DVN": {
    "status": "watch",
    "analyst_score": 38.0,
-   "composite": 71.0,
+   "composite": 71.1,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17849,16 +17849,16 @@
     "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "dormant",
+   "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 38.68,
+   "stop_price": 38.56,
    "stop_pct": 8.6
   },
   "PSX": {
    "status": "watch",
    "analyst_score": 67.0,
-   "composite": 70.1,
+   "composite": 70.3,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17876,16 +17876,16 @@
     "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "dormant",
+   "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 225.61,
+   "stop_price": 224.66,
    "stop_pct": 8.4
   },
   "WMB": {
    "status": "watch",
    "analyst_score": -20.0,
-   "composite": 42.7,
+   "composite": 42.6,
    "last_alert": null,
    "last_alert_composite": null,
    "target_history": [
@@ -17903,10 +17903,10 @@
     "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "dormant",
+   "prev_status": "watch",
    "earnings_date": "",
    "days_to_earnings": null,
-   "stop_price": 58.75,
+   "stop_price": 58.46,
    "stop_pct": 8.8
   },
   "NWS": {
@@ -17925,10 +17925,10 @@
     "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "dormant",
+   "prev_status": "watch",
    "earnings_date": "2027-02-04",
    "days_to_earnings": 90,
-   "stop_price": 26.02,
+   "stop_price": 25.94,
    "stop_pct": 10.2
   },
   "NWSA": {
@@ -17952,24 +17952,14 @@
     "rising": false
    },
    "last_seen": "2026-11-06 close-1h",
-   "prev_status": "dormant",
+   "prev_status": "watch",
    "earnings_date": "2027-02-04",
    "days_to_earnings": 90,
-   "stop_price": 23.63,
+   "stop_price": 23.61,
    "stop_pct": 10.2
   }
  },
  "runs": [
-  {
-   "date": "2026-09-29",
-   "label": "close-1h",
-   "at": "2026-09-29T19:31:06.035605",
-   "dippers": 80,
-   "watch": 64,
-   "triggered": 3,
-   "alerted": 2,
-   "emailed": true
-  },
   {
    "date": "2026-09-30",
    "label": "close-1h",
@@ -18259,6 +18249,16 @@
    "triggered": 3,
    "alerted": 2,
    "emailed": true
+  },
+  {
+   "date": "2026-11-06",
+   "label": "close-1h",
+   "at": "2026-11-06T20:57:11.190471",
+   "dippers": 64,
+   "watch": 58,
+   "triggered": 2,
+   "alerted": 0,
+   "emailed": false
   }
  ],
  "stale_alert_sent_at": "2026-10-13T20:17:56.860086"
